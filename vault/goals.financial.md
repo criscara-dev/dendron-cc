@@ -2,13 +2,42 @@
 id: 1eec90b3-6054-4103-be84-b2020d41dcc4
 title: Financial
 desc: ''
-updated: 1615230210764
+updated: 1615739508478
 created: 1613847036984
 ---
 
-Financial
+# Financial
 
 Becoming millionaire following my Personal trading Academy
+
+## Principles
+
+Never rely on emational and gut instincts.
+
+0. Trade: short-term | Investment: long-term
+1. make a lot of trades and each individual move is less important, reducing a portfolio's overall risk.
+Everything should resemble a gambling casino. Basically to make profits is enough to trade enough that I only need a little bit more than half wagers (bet).
+You just need to be right 51% of the time... (but I need to use a larger amount)
+
+2. The system determines what to trade. So, follow the data, the why doesn't matter but the effect matters.
+
+3. Hidden Markov model - chain. Stochastics differential equations
+
+4. look out for signals and never ask why, just found them!
+
+5. one strategy with enduring success: betting on retracements (>60% of investments that experienced big, sudden price rises or drops would snap back, at least partially, it turned outs) a.k.a Fat Finger Fishing and Aftershock Pumps.
+
+5. Psicology of trading and cognitive bias: _loss aversion_ (feel more pain from losses as twice more than from gains) _anchoring_ (judgement skewed by initial piece of information or experience) and _en dowment effect_ (how investors assign excessive value to what they already own in their portfolio)
+> Avoid emotional decision! dont stress out and don't overreact.
+
+6.  - 5' bars?
+    - Bayes' theorem of probability...
+    - slippage
+
+7. idea super short term signal base on Elon Musk tweet on Bitcoin
+8. fight overfitting datasets by scrutinizing large and confusing data sets
+
+---
 
 [DCA = dollar cost averaging](https://academy.binance.com/en/articles/dollar-cost-averaging-dca-explained)
 Basically divide your bet into many chunks instead of trade all Account at once:
