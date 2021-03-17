@@ -2,7 +2,7 @@
 id: 9da6d4c5-b0bd-4cb3-8d63-94362c64dd68
 title: Ideas
 desc: ''
-updated: 1614451710374
+updated: 1615799065356
 created: 1609701979868
 ---
 
@@ -12,10 +12,10 @@ created: 1609701979868
  ### About RenArt
 
 zeitgest...
-I'm starting with a blank canvas and seeing where it goes, I DONT predefine my expectations or try to design a path that will fulfil a purpose and communicate a message. It's a creative/technical experimentation.
+I'm starting with a blank canvas and seeing where it goes, I DON'T predefine my expectations or try to design a path that will fulfil a purpose and communicate a message. It's a creative/technical experimentation.
 But there's a message as well, and where it exist, there surely is a meaning.
 
-The Bible, the Ark, Isle of the deads, Turner, Star maps, Industrial city, Stargate, the past history, Earth, Mars, landscapes, Pire Reis, Et In Arcadia Ego, Turin Syndon , Stendhal effect, night launch rocket, Hammuraby, rock engraving (the Spaceman), reflection, Mars sunset, Comets
+The Bible, the Ark, Isle of the deads, Turner, Star maps, Industrial city, Stargate, the past history, Earth, Mars, landscapes, Pire Reis, Et In Arcadia Ego, Turin Syndon , Stendhal effect, night launch rocket, Hammurabi, rock engraving (the Spaceman), reflection, Mars sunset, Comets
 
 
 artists, which inspire my work:

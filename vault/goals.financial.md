@@ -2,7 +2,7 @@
 id: 1eec90b3-6054-4103-be84-b2020d41dcc4
 title: Financial
 desc: ''
-updated: 1615739508478
+updated: 1615990257326
 created: 1613847036984
 ---
 
@@ -161,3 +161,5 @@ Check out skycoin/Bitcoin...
 ## Glossary
 
 slippage: not getting the best price you'd expected. use LIMIT not MARKET price then
+
+- [ ] new Book
