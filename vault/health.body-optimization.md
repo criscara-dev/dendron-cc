@@ -2,7 +2,7 @@
 id: c6169ec7-2983-4fc4-9931-35b3e2a154da
 title: Body Optimization
 desc: ''
-updated: 1616094656789
+updated: 1616095873144
 created: 1616067166506
 ---
 
@@ -30,5 +30,21 @@ Andrew Huberman Series on YouTube
         - cold shower approach, to raise stress treshold, and try to resist shivering (a natural response to warm you up); try to relax during it... 4 sec technique
         - for lose fat (thermogenesis) -> succinate in blood -> increase fat brown, rich in mitochondria and help ti generate energy: DONT resist the shivering!
 
-> tyrosine -> dopamine = pro activity
-tryptophan -> serotonine = pro sleep
+> fasting(few meat and nuts)/tyrosine -> epinephrine/norepinephrine/dopamine = pro activity
+carbo/tryptophan -> serotonine = pro sleep
+increase temperature extend the day...
+
+#### Checklist with the purpose to identify variables that are influencing your life day to day - Self experimentation
+
+- [ ] wakeup time
+- [ ] time :sunny: ?
+- [ ] time exercises? 
+- [ ] aerobic
+- [ ] anaerobic 
+- [ ] chill? 
+- [ ] hot? 
+- [ ] non sleep/deep rest protocol/hypnosis
+- [ ] meals? 
+
+ 
+ 
