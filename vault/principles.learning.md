@@ -2,7 +2,7 @@
 id: 3b652b1f-d1d6-4413-a9a1-fc2dc0a06f36
 title: Learning
 desc: ''
-updated: 1615195543644
+updated: 1616259945797
 created: 1604914147875
 ---
 # Learning
@@ -43,7 +43,7 @@ created: 1604914147875
 
 ### Principles
 
-> lorem ipsum
+> The job of a programmer is to use google when you don't know the answer, so use whatever tools you have at your disposal to find the solution to your problem.
 
 ---
 

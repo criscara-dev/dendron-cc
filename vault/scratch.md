@@ -2,7 +2,7 @@
 id: 62ee6cc2-eade-4ae7-b389-b293dd451fbb
 title: Scratch
 desc: ''
-updated: 1613846928055
+updated: 1616260130789
 created: 1606052489366
 stub: false
 ---
@@ -86,4 +86,9 @@ You can find this on your statement. We convert your annual simple rate into a d
 > Didn't You Say We Can Learn Anything?
 Yes! I said that Anyone, Anywhere can learn Anything. But that doesn't mean that we don't have things we are better suited to than others. With our limited time, our job is to figure out what to pursue based on our existing skills, and the skills we can develop. Sometimes we have to know when to turn around and pick the right path in order to use our resources efficiently.
 I'm 33 now. I probably don't have a shot at becoming a gold medallist in gymnastics unfortunately :(
-    Andrei Nogoie
+    Andrei Neagoie
+
+2021-03-20 17:08
+> The job of a programmer is to use google when you don't know the answer, so use whatever tools you have at your disposal to find the solution to your problem.
+    Andrei Neagoie
+
