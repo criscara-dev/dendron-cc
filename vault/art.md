@@ -2,7 +2,7 @@
 id: 12806ca4-c38c-4f84-ae35-1e216a8d8c89
 title: Art
 desc: ''
-updated: 1613938105144
+updated: 1616591806723
 created: 1608493374374
 ---
 
@@ -107,3 +107,20 @@ Advice: paint always what you see, not what you think you see. Now how...
     photo | no emotion/sentiment | mechanical, academic but accurate
     life drawing| emotion, connection, sentiment| artistic enphasis on essential features...
 
+### The art of fake
+
+1. Crafts foundation
+
+~~You want to be a fine art painter, aka an 'artist' and you want to live with that but do you know what it takes?
+When you first start, you reckon the 10.000 hrs rules is the 'thing' but guess what.
+This rule has been proved wrong.
+Here's an interesting article that debunk the myth. 
+link
+That's very good but guess what, how should I approach~~
+
+1. The path from A to Z for a copy
+2. starting from the end, my final result and analysis:
+    - the reason why is because I don't want you to see the way I'm putting colors on canvas...it doesn't really matter. You have to found your way otherwise problems will surge later and you won't become independent but someone else's copy.
+3. deconstruct the painting with notes and pictures and steps
+4. painting some 'difficult' features to find out how to overcome the tricky parts
+5. ...s
