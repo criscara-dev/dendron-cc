@@ -2,7 +2,7 @@
 id: c6169ec7-2983-4fc4-9931-35b3e2a154da
 title: Body Optimization
 desc: ''
-updated: 1616443770481
+updated: 1616780138335
 created: 1616067166506
 ---
 
@@ -32,7 +32,32 @@ examine.com
     In adults appened easier with traumatic events 'cause of epinefrine and acetylcholine and it does that like an highlighter:
     - epinefrine -> alertness and acetylcholine (in foods as eggs, meat and fish,dairy, Chocolate, peanut butter, brussels sprouts and broccoli as choline) -> marking the neurons active during this state of alertness and this process streghten the synapsis in the brain and let them more active in the future even without thinking too much
     - HOW TO LEARN (sience): how much time you can continually focus on what you want to learn and agitation/strain as well (epinefrine release) to trigger neuroplasticity but the re-wiring happens during inactivity, such as sleep and sleep deep rest. study very hard and very intense and immediately after 20' deep rest/sleep, accellerate neuroplasticity
-    - SLEEP and FOCUS ex. if the people are learning a brain or motor skill with a tone palying in the background and that 'bell'/tone is playing during deep sleep that learning is much faster (it coues the nervous system) 
+    - SLEEP and FOCUS ex. if the people are learning a brain or motor skill with a tone palying in the background and that 'bell'/tone is playing during deep sleep that learning is much faster (it cuePs the nervous system) 
+    - - Mastering the Autonomic Nervous System: role of autonomic nervous system in [ultradian](https://en.wikipedia.org/wiki/Ultradian_rhythm) rhythms and they continue during the day so the first 10' awake during let's say I'm trying to learn they'll be challanging and hard then I'll enter into the flow so I can go deep into learning then probably last 10' my attention level will go down again (time for a break!)
+    - when during the day you get anxious ask yourself when are you most focused? when are you least anxious? when you feel least motivated? discover when your sensation, perception etc. want to be engaged and not, you'll develop the ability to choose when to do one thing or the other.
+    
+
+2021-03-24 19:10
+### Master Your Sleep & Be More Alert When Awake
+- get consistency in sleep, get asleep better, sleep better, wake feeling better
+- 2 things: 
+    - Adenosine building up (high): create a sleep hunger, more you're awake more it increase
+    caffeine 'in general' block the adenosine receptors but you need to explore your range
+    - circadian force (clock in our brain) regulate when we want to be awake or sleep
+- we wake-up because cortisol from adrenal glands and adrenaline and (epinefrine from your brain) getting high. This pulse happen early in the day and it's influenced by light.
+    - at the same time the melatonine get signal for sleepiness from the pineal gland: as an adult is release only at night based on your circadian but dont get external melatonine, specially for kids since it suppress onset puberty via blocking other hormons since it's getting activate.
+- get sunlight (energy) into your eyes (nervous cells) in the morning at sunrise or close to it. No through windows! it need to be direct! too late can cause anxiety disorder and depression and blood pressure. so Cortisol early in the day and via sunlight! if artificial you need a lot of blue and yellow light arrive in your retina in the morning.
+- to your body to know when is day or evening go outside al sunrise (early sunlight) and late afternoon at sunset (c.ca); light information set the circadian clock via eyes only.
+- bad effect of light: (because of artificial light): basically a lot of light, blue light early in the day, day and light after say 8pm in the evening
+- location of the lights in the evening should be low in the room and better yellow, red SO NO STRONG LIGHTS BETWEEN 11PM AND 4AM.
+- ==NSDR== practice to getting better at sleep NON SLEEP DEEP REST: 
+    - yoganidra: 20' at the time: [first](https://www.youtube.com/watch?v=M0u9GST_j3s&t=48s) and [second](https://www.youtube.com/watch?v=FroVfmOtaps)
+- [clinic hypnosis to re-wire sleep](https://reverihealth.com/)
+- what affect circadian time behavior? all drugs/compounds: what is safer?
+    - magnesium threonate -> GABA 300/440 gr, 30/60' before sleep
+    - theanine -> 100/200 gr, 30/60' before sleep
+    - apigenin <- from chamomile (but increase estrogens)
+    - check examine.com for more info
 
 
 
