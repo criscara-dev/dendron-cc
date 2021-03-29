@@ -2,7 +2,7 @@
 id: 9da6d4c5-b0bd-4cb3-8d63-94362c64dd68
 title: Ideas
 desc: ''
-updated: 1615799065356
+updated: 1616857412653
 created: 1609701979868
 ---
 
@@ -51,10 +51,8 @@ Interview with Anna Tilroe, 1987
 Conversation with Paolo Vagheggi, 1999SOURCE
 
 
+### Instagram
 
----
-
-## APPS
-
-## EXPERIMENTS
+name: Art in science: problem... 😅😅😅 I need paintings first, at least 20 and be able to make 1 in 1/2 days with acrylics. 🤨 🤓 😎
+Forza!
 

@@ -2,7 +2,7 @@
 id: c6169ec7-2983-4fc4-9931-35b3e2a154da
 title: Body Optimization
 desc: ''
-updated: 1616780138335
+updated: 1616792731204
 created: 1616067166506
 ---
 
@@ -56,7 +56,7 @@ examine.com
 - what affect circadian time behavior? all drugs/compounds: what is safer?
     - magnesium threonate -> GABA 300/440 gr, 30/60' before sleep
     - theanine -> 100/200 gr, 30/60' before sleep
-    - apigenin <- from chamomile (but increase estrogens)
+    - apigenin <- from c hamomile (but increase estrogens)
     - check examine.com for more info
 
 
