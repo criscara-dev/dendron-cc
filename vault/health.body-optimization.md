@@ -2,7 +2,7 @@
 id: c6169ec7-2983-4fc4-9931-35b3e2a154da
 title: Body Optimization
 desc: ''
-updated: 1616792731204
+updated: 1617219111649
 created: 1616067166506
 ---
 
@@ -115,4 +115,12 @@ increase temperature extend the day...
 - [ ] meals? 
 
  
- 
+### Tools for Managing Stress & Anxiety
+
+- what is stress? from neck to navel are the nerves responsable...
+    - sympathetic nerve ganglia they fire for stress -> release acetilcoline -> post... -> epinefrine (adrenaline): the stress response push certain system to be activate and not for other system (the agitation -> the blood go only to certain part of your body that support moving)
+    - control stress = control response -> best tools to reduce stress activate control are: para sympathetic nervous system:
+        - exaling the diaphram moves up
+        - inaling the diaphram moves down
+        1. calm down quickly techniques = exale longer and more vigorous than inale
+        2. phisiological side? 29' https://www.youtube.com/watch?v=ntfcfJ28eiU&list=PLPNW_gerXa4Pc8S2qoUQc5e8Ir97RLuVW&index=4

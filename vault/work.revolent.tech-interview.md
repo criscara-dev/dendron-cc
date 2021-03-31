@@ -2,7 +2,7 @@
 id: d3c5b032-ccc4-483b-bad3-f325b8951be1
 title: Tech-interview
 desc: ''
-updated: 1612204023291
+updated: 1617026481803
 created: 1603706834819
 stub: false
 ---
@@ -157,3 +157,29 @@ Are you embracing disagreement?
 
 2021-01-05 09:04
 - [x] session on Interview Preparation with Ryan
+
+---
+
+First Interview ever
+2021-03-29 10:42
+
+
+Francesco Rella tips: mi piacerebbe restare su un progetto per un po di tempo… un rapporto continuativo… e cosi lavoro anche meglio… se vedo un problema propongo soluzioni come un consulente;
+Platinum Partner SF Energy and Finance
+
+Ho: talento, passione, dinamismo, proattività.
+
+
+My questions:
+1. c'e' un progetto specifico per cui ricercate il mio ruolo? e su quale prodotto SF?
+2. which problem are you trying to solve? -> and so which tool (Apex, LWC, VF Page, Vlocity etc.) do you wan to use?
+3. Se mi prendete, quale sarebbe il mio ruolo nell'azienda e come e' strutturato il team?
+4. Adozione di SF in Italia...
+5. metodologie di SLDS usate? Agile?
+6. fate training o formazione specifiche per il ruolo?
+utlizzate sistemi esterni per testing?
+
+
+to review:
+https://developer.salesforce.com/wiki/apex_code_best_practices
+
