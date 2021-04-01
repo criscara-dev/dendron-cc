@@ -1,8 +1,9 @@
 site:
-    assetsPrefix:  /dendron-template
+    assetsPrefix:  /digital-garden
     copyAssets: true
     siteHierarchies:
         - health
+        - books
     siteRootDir: docs
     siteUrl: "https://criscara-dev.github.io"
     usePrettyRefs: true
