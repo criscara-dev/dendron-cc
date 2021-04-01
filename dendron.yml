@@ -2,7 +2,7 @@ site:
     assetsPrefix:  /dendron-template
     copyAssets: true
     siteHierarchies:
-        - computer-science
+        - health
     siteRootDir: docs
     siteUrl: "https://criscara-dev.github.io"
     usePrettyRefs: true
