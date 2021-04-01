@@ -1,4 +1,5 @@
 site:
+    siteUrl: https://criscara-dev.github.io
     assetsPrefix:  /dendron-template
     copyAssets: true
     siteHierarchies:

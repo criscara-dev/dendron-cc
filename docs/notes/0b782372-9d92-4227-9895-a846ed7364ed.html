@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  
+  <title>Nodejs - undefined</title>
+  
+
+  <link
+    rel="shortcut icon"
+    href="https://criscara-dev.github.io/dendron-template/favicon.ico"
+    type="image/x-icon"
+  />
+  <link
+    rel="stylesheet"
+    href="https://criscara-dev.github.io/dendron-template/assets/css/just-the-docs-default.css"
+  />
+  <script
+    type="text/javascript"
+    src="https://criscara-dev.github.io/dendron-template/assets/js/just-the-docs.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+    integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X"
+    crossorigin="anonymous"
+  />
+  <script
+    type="text/javascript"
+    src="https://criscara-dev.github.io/dendron-template/assets/js/vendor/lunr.min.js"
+  ></script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   
+  
+<meta name="description" content="Personal knowledge space">
+<meta name="author" content="">
+
+<link rel="canonical" href="https://criscara-dev.github.io/notes/0b782372-9d92-4227-9895-a846ed7364ed.html">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://criscara-dev.github.io/notes/0b782372-9d92-4227-9895-a846ed7364ed.html">
+<meta property="og:description" content="Personal knowledge space">
+<meta property="og:image" content="https://criscara-dev.github.ioundefined">
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:url" content="https://criscara-dev.github.io/notes/0b782372-9d92-4227-9895-a846ed7364ed.html">
+<meta name="twitter:description" content="Personal knowledge space">
+<meta name="twitter:image" content="https://criscara-dev.github.ioundefined">
+
+
+  <meta property="og:title" content="Nodejs - undefined" />
+  <meta name="twitter:title" content="Nodejs - undefined" />
+  
+</head>
+
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="svg-link" viewBox="0 0 24 24">
+        <title>Link</title>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+          <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+        </svg>
+      </symbol>
+      <symbol id="svg-search" viewBox="0 0 24 24">
+        <title>Search</title>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+          <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </symbol>
+      <symbol id="svg-menu" viewBox="0 0 24 24">
+        <title>Menu</title>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+          <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </symbol>
+      <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+        <title>Expand</title>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </symbol>
+      <symbol id="svg-doc" viewBox="0 0 24 24">
+        <title>Document</title>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+          <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+        </svg>
+      </symbol>
+    </svg>
+
+    <div class="side-bar">
+      <div class="site-header">
+        <a href="https://criscara-dev.github.io/dendron-template" class="site-title lh-tight">
+  
+
+ </a>
+        <a href="#" id="menu-button" class="site-button">
+          <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
+        </a>
+      </div>
+
+      <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
+      </nav>
+      <footer class="site-footer">
+        🌱 with 💕 using <a href="https://www.dendron.so/"> Dendron 🌲 </a>
+      </footer>
+    </div>
+    <div class="main" id="top">
+        <div id="main-header" class="main-header">
+          
+            <div class="search">
+              <div class="search-input-wrap">
+                <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search " aria-label="Search " autocomplete="off">
+                <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+              </div>
+              <div id="search-results" class="search-results"></div>
+            </div>
+          
+          
+    </div>
+    <div id="main-content-wrap" class="main-content-wrap">
+      
+        
+          <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://criscara-dev.github.io/dendron-template">Computer-Science</a></li><li class="breadcrumb-nav-list-item"><a href="https://criscara-dev.github.io/dendron-template/notes/988681b4-a8fd-41cc-90a2-12e0adaaaebc.html">Lang</a></li><li class="breadcrumb-nav-list-item"><a href="https://criscara-dev.github.io/dendron-template/notes/1eeab78a-4075-44c1-8316-d0d35922857a.html">Javascript</a></li><li class="breadcrumb-nav-list-item">Nodejs</li></ol>
+          </nav>
+        
+      
+      <div id="main-content" class="main-content" role="main">
+
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+        
+
+        <script>
+          $(function () {
+            $('[data-toggle="popover"]').popover({html: true})
+          })
+        </script>
+
+        
+
+<div id="main" role="main">
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Nodejs">
+    
+    <meta itemprop="datePublished" content="2020-10-12T20:23:54+00:00">
+    <meta itemprop="dateModified" content="2021-02-01T20:53:09+00:00">
+
+    <div class="page__inner-wrap">
+
+      
+
+      <section class="page__content" itemprop="text">
+
+        
+
+        <h2 id="node"><a aria-hidden="true" class="anchor-heading" href="#node"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Node</h2>
+<h4 id="my-apis"><a aria-hidden="true" class="anchor-heading" href="#my-apis"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>my APIs</h4>
+<p> <a href="https://criscara-dev.github.io/dendron-template/notes/10614a85-04d7-4ad0-a3e9-459543628f21.html">RESTful APIs</a></p>
+<h4 id="how-to-write-snippets"><a aria-hidden="true" class="anchor-heading" href="#how-to-write-snippets"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>how to write snippets</h4>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> date <span class="token operator">=</span> <span class="token known-class-name class-name">Date</span><span class="token punctuation">.</span><span class="token method function property-access">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>date<span class="token punctuation">.</span><span class="token method function property-access">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<hr>
+<h3 id="summary-notes"><a aria-hidden="true" class="anchor-heading" href="#summary-notes"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Summary Notes:</h3>
+<details><summary>
+What is a server?
+</summary>
+A Computer that we're talking to in order to send and receive data.
+In fact one App request data to a server that send back a response.
+- communication
+- Server is a trust environment
+- JS server-side is NodeJS
+</details>
+<details><summary>
+What is Node
+</summary>
+<p>Node is a runtime environment,
+can do computerish things while JS can only do Browser things.</p>
+</details>
+<details><summary>
+How execute files in Node?
+</summary>
+ex. file name app.js
+Terminal -> > Node app
+</details>
+<details><summary>
+How to star a basic server?
+</summary>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">let</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"http"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> ourApp <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token method function property-access">createServer</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+  <span class="token comment">// console.log(req.url);</span>
+  <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>req<span class="token punctuation">.</span><span class="token property-access">url</span> <span class="token operator">==</span> <span class="token string">"/"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    res<span class="token punctuation">.</span><span class="token method function property-access">end</span><span class="token punctuation">(</span><span class="token string">"Hello, welcome to our website"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>req<span class="token punctuation">.</span><span class="token property-access">url</span> <span class="token operator">==</span> <span class="token string">"/about"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    res<span class="token punctuation">.</span><span class="token method function property-access">end</span><span class="token punctuation">(</span><span class="token string">"Thanks for visiting us"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  res<span class="token punctuation">.</span><span class="token method function property-access">end</span><span class="token punctuation">(</span><span class="token string">"page not available, sorry."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ourApp<span class="token punctuation">.</span><span class="token method function property-access">listen</span><span class="token punctuation">(</span><span class="token number">3000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Terminal command: Node test</span>
+</code></pre>
+</details>
+<details><summary>
+What is Express?
+</summary>
+Fast, unopinionated, minimalist web framework for Node.js
+</details>
+<details><summary>
+Which tech brought success to Node?
+</summary>
+NPM, MongoDB, RESTful API and JSON, ExpressJS.
+</details>
+<details><summary>
+Basics before Node
+</summary>
+<p>#Interpreters -> execute directly source code (basically they read and compile); an example is #v8 Chrome JS engine.
+#Compilers -> from source they create an executable file (a file a computer can execute)
+#transpilers -> one source code into another source code (CoffeeScript into JS, Less in CSS)
+Modern day computer understand 1010001011...( #low-level ) you normally write #high-level code / language</p>
+</details>
+<details><summary>
+What is Node exactly?
+</summary>
+<p>web browser App take the #source-code to ->  #v8 ... -> execute.
+Node is a #server-side javascript #runtime-environment.
+Is built on top of #v8 Chrome JS engine.
+#v8 can be called as well a JavaScript #interpreter
+It's a #C++ application that now run 2 Apps:</p>
+<ul>
+<li>
+<p>Script processor: in Terminal use cmd: > Node fileName</p>
+</li>
+<li>
+<p>REPL (start after you typed Node as a cmd)
+It's #non-blocking-IO (tasks keeping to be added to the task list) and has a #single-threated (one task at the time) but at the same time, ==it can schedule thing for later and can keep prioritising tasks as they get added==
+When you run a Node App you just specified and 'entry file'.</p>
+</li>
+<li>
+<p>you use Node specifying the file required:</p>
+</li>
+</ul>
+<pre class="language-javascript"><code class="language-javascript"> <span class="token comment">// where I need the file</span>
+<span class="token keyword">var</span> lib <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./lib'</span><span class="token punctuation">)</span>
+ <span class="token comment">// to export the file</span>
+module<span class="token punctuation">.</span><span class="token property-access">exports</span> <span class="token operator">=</span> whatever
+</code></pre>
+</details>
+<details><summary>
+What is a REPL?
+</summary>
+Read Eval Print Loop (infinite repeated task)
+<p><code>fs.(after the dot, press tab to see suggestions)</code></p>
+</details>
+<details><summary>
+ #Node-conventions?
+</summary>
+<ul>
+<li>package.json:
+<ul>
+<li>it contain project basic info</li>
+<li>dependencies (external code that I want to leverage on my app)</li>
+</ul>
+</li>
+<li>package-lock.json: the exact version used to create the App is 'locked' so, future updates cannot break my App</li>
+<li>.npmrc: contain a token that let you to do things but only for you, not an anonymous user</li>
+<li>common testing files contain:
+<ul>
+<li>travis.yml</li>
+<li>jshintrc</li>
+</ul>
+</li>
+<li>#VCS normally as a:
+<ul>
+<li>.git file</li>
+<li>.gitignore</li>
+</ul>
+</li>
+<li>readme.md: normally in the root directory</li>
+<li>code comments rules (above code):
+<ul>
+<li>@Param</li>
+<li>@TODO</li>
+<li>@Author</li>
+<li>@Date
+(or just use GIT that better comment who's doing what etc. )</li>
+</ul>
+</li>
+<li>environments and configuration:
+<ul>
+<li>start App with: NODE_ENV=myEnvironmentName node index.js
+in a congif.js file</li>
+<li>and used a switch as: process.env.NODE_ENV</li>
+</ul>
+</li>
+<li>Start your app with every configuration variable you're going to need for that environment:
+DBpassword=myDBpassword apiToken=mySecretToken
+port=thePortlShouldRunOn foo=bar node index.js</li>
+<li>.env file ignore by source control</li>
+<li>style guide for Node: Airbnb and linters such as: jshint and jslint</li>
+<li>error handling:
+Functions should callback two parameters
+<ul>
+<li>An error (if any)</li>
+<li>Data being returned (if any)</li>
+<li>ErrBack (from Express convention):</li>
+</ul>
+<pre class="language-javascript"><code class="language-javascript"><span class="token function">exampleFunction</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>data</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token comment">// Check the error</span>
+<span class="token comment">// Do stuff with the data</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+<li>avoid throwing Exceptions 'cause it kill the App since Node is single-threaded</li>
+<li>avoid use G lobals since create polluted namespaces
+</li></ul></details>
+
+
+<details><summary>
+From server-side to the browser, what is not available in Node that is exclusive of the browser?
+</summary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th> </th><th> </th></tr></thead><tbody><tr><td>window.open</td><td>document</td></tr><tr><td>window.location</td><td>document.body</td></tr><tr><td>window.navigator</td><td>onchange</td></tr><tr><td>window.origin</td><td>onclick</td></tr><tr><td>window.focus</td><td>onblur</td></tr><tr><td>window.blur</td><td>oncopy</td></tr><tr><td>window.scroll</td><td>oncut</td></tr><tr><td>window.alert</td><td>onscroll</td></tr><tr><td>window.localstorage</td><td>onmouseenter</td></tr><tr><td>window.onload</td><td>onmouseleave</td></tr></tbody></table>
+</details>
+<details><summary>
+From the browser to server-side, what is not available in the browser that is exclusive of the Node?
+</summary>
+Interact with the Filesystem, with the OS etc. and there's no way End users can see your code.
+</details>
+<details><summary>
+cmd to generate keys for HTTPS?
+</summary>
+<h2 id="keygen-cmd"><a aria-hidden="true" class="anchor-heading" href="#keygen-cmd"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Keygen cmd:</h2>
+<p>->
+openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem</p>
+</details>
+<hr>
+<h3 id="node-objects"><a aria-hidden="true" class="anchor-heading" href="#node-objects"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Node Objects</h3>
+<p><code>global.process.</code>: so, Instead of introducing I/O overhead operations, I can use  the <code>process.nextTick()</code> instead of <code>setTimeout()</code>, if the App grow I/O is going to have impact in your server.</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token operator">></span>vim fileName<span class="token punctuation">.</span><span class="token property-access">js</span>
+<span class="token spread operator">...</span><span class="token punctuation">.</span><span class="token property-access">code</span> here
+
+<span class="token operator">:</span>x <span class="token operator">+</span> enter to save and exit
+</code></pre>
+<p>or use <code>nano</code> instead of vim</p>
+<p>explore the use of <code>global</code> object in node.</p>
+<h4 id="modules"><a aria-hidden="true" class="anchor-heading" href="#modules"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>modules</h4>
+<p>Export single functions:</p>
+<pre class="language-node"><code class="language-node">var PI = Math.PI;
+
+exports.area = function(r){
+	return PI * r * r
+}
+
+exports.circumference = function(r) {
+	return 2 * PI * r
+}
+</code></pre>
+<p>in the folder containing the <code>circle.js</code> file open <code>node</code> on terminal:</p>
+<pre class="language-node"><code class="language-node">var circle = require('./circle.js') or 
+var circle = require('./circle') // setting up the variable - .js is the default and I can avoid to use it, it's what Node is doing already
+> circle.area(4)
+// 50.26548245743669
+> circle.circumference(4)
+// 25.132741228718345
+</code></pre>
+<p>Entire Module to export:</p>
+<pre class="language-node"><code class="language-node">var PI = Math.PI;
+
+module.exports = function(r){
+	return {
+	area: function(){
+		return PI * r * r
+		},
+	circumference:  function() {
+	return 2 * PI * r
+	}
+}
+}
+...
+> var myCircle2 = circle(4)
+> myCircle2.area()
+50.26548245743669
+...
+> myCircle2.circumference()
+25.132741228718345
+
+</code></pre>
+<h4 id="npm"><a aria-hidden="true" class="anchor-heading" href="#npm"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>NPM</h4>
+<ol>
+<li>check npm website</li>
+<li>use command <code>npm i -g --save</code>: </li>
+</ol>
+<ul>
+<li><code>-g</code> flag install the package globally</li>
+<li>the flag <code>--save</code> is saving the dependency in <code>package.json</code></li>
+<li>the flag<code>--save-dev</code> is saving the dev dependency in <code>package.json</code></li>
+<li>wildcards: <code>~</code> and/or <code>^</code> and/or <code>*</code> (last version) AVOID USE START! - for versioning: <code>1.0.0</code> i.e. <code>major.minor.patch</code></li>
+</ul>
+<hr>
+<h2 id="children"><a aria-hidden="true" class="anchor-heading" href="#children"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Children</h2>
+<ol>
+<li><a href="https://criscara-dev.github.io/dendron-template/notes/8e2e9325-b8c7-4124-98f5-10e743ebdcc0.html">Errors</a></li>
+<li><a href="https://criscara-dev.github.io/dendron-template/notes/10614a85-04d7-4ad0-a3e9-459543628f21.html">Restful-apis</a></li>
+</ol>
+<hr>
+<h2 id="backlinks"><a aria-hidden="true" class="anchor-heading" href="#backlinks"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Backlinks</h2>
+<ul>
+<li><a href="https://criscara-dev.github.io/dendron-template/notes/1eeab78a-4075-44c1-8316-d0d35922857a.html">Javascript</a></li>
+</ul><span id="navId" data="0b782372-9d92-4227-9895-a846ed7364ed"></span>
+
+                
+      </section>
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+        
+          <hr>
+          <footer>
+            
+            
+
+            
+                
+              </div>
+          </footer>
+        
+    </div>
+</div>
+
+
+  
+
+  <div class="search-overlay"></div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  
+  <title>Building-a-computer - undefined</title>
+  
+
+  <link
+    rel="shortcut icon"
+    href="https://criscara-dev.github.io/dendron-template/favicon.ico"
+    type="image/x-icon"
+  />
+  <link
+    rel="stylesheet"
+    href="https://criscara-dev.github.io/dendron-template/assets/css/just-the-docs-default.css"
+  />
+  <script
+    type="text/javascript"
+    src="https://criscara-dev.github.io/dendron-template/assets/js/just-the-docs.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+    integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X"
+    crossorigin="anonymous"
+  />
+  <script
+    type="text/javascript"
+    src="https://criscara-dev.github.io/dendron-template/assets/js/vendor/lunr.min.js"
+  ></script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   
+  
+<meta name="description" content="Personal knowledge space">
+<meta name="author" content="">
+
+<link rel="canonical" href="https://criscara-dev.github.io/notes/cb18c17b-5359-4c20-83f5-a9821c4b942d.html">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://criscara-dev.github.io/notes/cb18c17b-5359-4c20-83f5-a9821c4b942d.html">
+<meta property="og:description" content="Personal knowledge space">
+<meta property="og:image" content="https://criscara-dev.github.ioundefined">
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:url" content="https://criscara-dev.github.io/notes/cb18c17b-5359-4c20-83f5-a9821c4b942d.html">
+<meta name="twitter:description" content="Personal knowledge space">
+<meta name="twitter:image" content="https://criscara-dev.github.ioundefined">
+
+
+  <meta property="og:title" content="Building-a-computer - undefined" />
+  <meta name="twitter:title" content="Building-a-computer - undefined" />
+  
+</head>
+
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="svg-link" viewBox="0 0 24 24">
+        <title>Link</title>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+          <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+        </svg>
+      </symbol>
+      <symbol id="svg-search" viewBox="0 0 24 24">
+        <title>Search</title>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+          <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </symbol>
+      <symbol id="svg-menu" viewBox="0 0 24 24">
+        <title>Menu</title>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+          <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </symbol>
+      <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+        <title>Expand</title>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </symbol>
+      <symbol id="svg-doc" viewBox="0 0 24 24">
+        <title>Document</title>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+          <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+        </svg>
+      </symbol>
+    </svg>
+
+    <div class="side-bar">
+      <div class="site-header">
+        <a href="https://criscara-dev.github.io/dendron-template" class="site-title lh-tight">
+  
+
+ </a>
+        <a href="#" id="menu-button" class="site-button">
+          <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
+        </a>
+      </div>
+
+      <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
+      </nav>
+      <footer class="site-footer">
+        🌱 with 💕 using <a href="https://www.dendron.so/"> Dendron 🌲 </a>
+      </footer>
+    </div>
+    <div class="main" id="top">
+        <div id="main-header" class="main-header">
+          
+            <div class="search">
+              <div class="search-input-wrap">
+                <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search " aria-label="Search " autocomplete="off">
+                <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+              </div>
+              <div id="search-results" class="search-results"></div>
+            </div>
+          
+          
+    </div>
+    <div id="main-content-wrap" class="main-content-wrap">
+      
+        
+          <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://criscara-dev.github.io/dendron-template">Computer-Science</a></li><li class="breadcrumb-nav-list-item">Building-a-computer</li></ol>
+          </nav>
+        
+      
+      <div id="main-content" class="main-content" role="main">
+
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+        
+
+        <script>
+          $(function () {
+            $('[data-toggle="popover"]').popover({html: true})
+          })
+        </script>
+
+        
+
+<div id="main" role="main">
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Building-a-computer">
+    
+    <meta itemprop="datePublished" content="2020-11-02T21:55:16+00:00">
+    <meta itemprop="dateModified" content="2020-11-07T18:31:16+00:00">
+
+    <div class="page__inner-wrap">
+
+      
+
+      <section class="page__content" itemprop="text">
+
+        
+
+        <h2 id="references"><a aria-hidden="true" class="anchor-heading" href="#references"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>References:</h2>
+<ul>
+<li><a href="https://www.coursera.org/?skipBrowseRedirect=true">Coursera</a> website</li>
+<li><a href="https://www.nand2tetris.org/software/HDL-Survival-Guide.html">Nand2Tetris</a> website</li>
+<li><a href="https://drive.google.com/file/d/1QDYIvriWBS_ARntfmZ5E856OEPpE4j1F/view">installation</a> etc.</li>
+</ul>
+<h2 id="project-based-on-the-coursera-course"><a aria-hidden="true" class="anchor-heading" href="#project-based-on-the-coursera-course"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Project based on the Coursera course:</h2>
+<p><img src="/dendron-template/assets/images/2020-11-02-21-59-48.png" alt="What I will do"></p>
+<p><img src="/dendron-template/assets/images/2020-11-02-22-10-29.png" alt="7 weeks program:"></p>
+<ol>
+<li>Builds logic gates
+Concepts:</li>
+</ol>
+<ul>
+<li>==Nand==, a logic gate.</li>
+<li>Xor, HDL (stand for Hardware Description language) program,
+<img src="/dendron-template/assets/images/2020-11-02-22-15-51.png" alt="Hack, assembly code and binary code"></li>
+</ul>
+<details><summary>
+Abstract Boolean logic
+</summary>
+<p>You can manipulate Boolean Expressions like arithmetic expressions</p>
+<details><summary>
+AND
+</summary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>x</th><th>y</th><th>AND</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>0</td></tr><tr><td>0</td><td>1</td><td>0</td></tr><tr><td>1</td><td>0</td><td>0</td></tr><tr><td>1</td><td>1</td><td>1</td></tr></tbody></table>
+</details>
+<details><summary>
+OR
+</summary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>x</th><th>y</th><th>OR</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>0</td></tr><tr><td>0</td><td>1</td><td>1</td></tr><tr><td>1</td><td>0</td><td>1</td></tr><tr><td>1</td><td>1</td><td>1</td></tr></tbody></table>
+</details>
+<details><summary>
+NOT
+</summary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>x</th><th>NOT</th></tr></thead><tbody><tr><td>0</td><td>1</td></tr><tr><td>1</td><td>0</td></tr></tbody></table>
+</details>
+<p>Construct Boolean function?
+We want to build a computer, so we need to go from Truth table to Boolean expression.
+In fact, any Boolean function can be represented using an expression containing AND, <del>OR</del> and NOT operations.
+We can use the #Morgan-Law to avoid using OR:
+Proof:
+(x OR y) = NOT(NOT(x) AND NOT(y))</p>
+<details><summary>
+With which expression we can do everything?
+</summary>
+<p>NOT AND or -> NAND
+x|y|NAND
+-|-|-
+0|0|1
+0|1|1
+1|0|1
+1|1|0</p>
+<p>and that lead to the Theorem:
+Any Boolean function can be represented using an expression containing only ==NAND== operations.</p>
+<p>Proof:
+1) NOT(x)= (x NAND x)
+2) (x AND y) = NOT(x NAND y)</p>
+</details>
+</details>
+<details><summary>
+What do you know about logic gates?
+</summary>
+<p>Logic gates:</p>
+<ul>
+<li>elementary
+<img src="/dendron-template/assets/images/2020-11-04-16-33-11.png">
+<img src="/dendron-template/assets/images/2020-11-04-16-34-58.png"></li>
+<li>composite
+<img src="/dendron-template/assets/images/2020-11-04-16-37-49.png">
+</li></ul></details>
+
+
+<details><summary>
+How can you implement a circuit?
+</summary>
+<p>Circuit implementation:
+<img src="/dendron-template/assets/images/2020-11-04-16-42-38.png">
+Both need to be true in order to light up the bulb.
+Or this:</p>
+<h2 id=""><a aria-hidden="true" class="anchor-heading" href="#"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a><img src="/dendron-template/assets/images/2020-11-04-16-44-57.png"></h2>
+<p>With OR logic we just need one port.
+<img src="/dendron-template/assets/images/2020-11-04-16-43-43.png"></p>
+</details>
+<details><summary>
+Which of these statements are true?
+</summary>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" checked disabled> The chip interface describes what the chip is doing; the chip implementation specifies how the chip is doing it.</li>
+<li class="task-list-item"><input type="checkbox" disabled> There is only one possible implementation for every interface.</li>
+<li class="task-list-item"><input type="checkbox" checked disabled> The user of the chip is interested in the chip interface; the builder of the chip is interested in the chip implementation.
+</li></ul></details>
+
+
+<details><summary>
+Build Logic Gates with Hardware Description Language (HDL)
+</summary>
+<p><img src="/dendron-template/assets/images/2020-11-04-18-47-44.png">
+First draw the interface ( ----- )
+then the implementation PARTS:
+<img src="/dendron-template/assets/images/2020-11-04-19-06-32.png"></p>
+</details>
+<details><summary>
+WHat is really HDL?
+</summary>
+<p><img src="/dendron-template/assets/images/2020-11-04-19-11-09.png"></p>
+</details>
+<details><summary>
+WHich are 2 example of HDL?
+</summary>
+#VHDL
+#Verilog
+</details>
+<h2 id="hardware-simulation"><a aria-hidden="true" class="anchor-heading" href="#hardware-simulation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Hardware simulation</h2>
+<details><summary>
+Interactive simulation
+</summary>
+<p><img src="/dendron-template/assets/images/2020-11-05-19-09-48.png"></p>
+</details>
+<details><summary>
+Revisiting script-based simulation with output files
+</summary>
+<p><img src="/dendron-template/assets/images/2020-11-05-19-44-03.png"></p>
+</details>
+<details><summary>
+Who are the players? (chip builders)
+</summary>
+<p>System architects
+Developers</p>
+</details>
+<h2 id="multi-bit-buses"><a aria-hidden="true" class="anchor-heading" href="#multi-bit-buses"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Multi-bit Buses</h2>
+<details><summary>
+How would you xor the first and last bits of a 16-bit bus named ‘bus’?
+</summary>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Xor(a=bus[0], b=bus[15], out=out)<sup id="fnref-1"><a href="#fn-1" class="footnote-ref">1</a></sup></li>
+<li class="task-list-item"><input type="checkbox" disabled> Xor(a=bus[0], b=bus[16], out=out)</li>
+<li class="task-list-item"><input type="checkbox" disabled> Xor(a=bus[1], b=bus[15], out=out)</li>
+<li class="task-list-item"><input type="checkbox" disabled> Xor(a=bus[1], b=bus[16], out=out)</li>
+</ul>
+</details>
+<details><summary>
+This is the interface declaration for an example chip named Example16, which we haven't discussed before:
+IN c, Bus1[16], Bus2[16];
+OUT out, out2[16];
+Which of these lines are valid in HDL, when implementing the Example16 chip?
+</summary>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Add16(a=Bus1[0..15], b=Bus2[0..15], out=out2[0..14]);</li>
+<li class="task-list-item"><input type="checkbox" disabled> Add16(a=Bus1[0..15], b=Bus2[0..15], out[0..14]=out2[0..14]);<sup id="fnref-2"><a href="#fn-2" class="footnote-ref">2</a></sup></li>
+<li class="task-list-item"><input type="checkbox" disabled> Add16(a=true, b=false, out=out2);<sup id="fnref-2"><a href="#fn-2" class="footnote-ref">2</a></sup></li>
+<li class="task-list-item"><input type="checkbox" disabled> Add16(a=c, b=Bus2[0..15], out=out2);</li>
+<li class="task-list-item"><input type="checkbox" disabled> And(a=c, b=Bus2[7], out=out);<sup id="fnref-2"><a href="#fn-2" class="footnote-ref">2</a></sup>
+</li></ul></details>
+
+
+<h2 id="project-overview"><a aria-hidden="true" class="anchor-heading" href="#project-overview"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Project Overview</h2>
+<p>Requirements:</p>
+<ul>
+<li>build 15 gates
+<ul>
+<li>Elementary logic gates
+Not
+And
+Or
+Xor
+Mux
+DMux</li>
+<li>16-bit variants
+Not16
+And16
+Or16
+Mux16 </li>
+<li>Multi-way variants
+Or8Way
+Mux4Way16
+Mux8Way16
+DMax4Way
+DMax8Way</li>
+</ul>
+</li>
+</ul>
+<details><summary>
+ex. implementing a Mux.hdl
+</summary>
+<p><img src="/dendron-template/assets/images/2020-11-06-14-06-18.png"></p>
+</details>
+<details><summary>
+How Mux and DMux are used in communication networks?
+</summary>
+<p><img src="/dendron-template/assets/images/2020-11-06-14-20-47.png"></p>
+</details>
+<details><summary>
+How to test the chip?
+</summary>
+<p><img src="/dendron-template/assets/images/2020-11-06-14-29-09.png"></p>
+</details>
+<details><summary>
+HDL survival guide and project 1?
+</summary>
+<p><a href="https://www.nand2tetris.org/project01">https://www.nand2tetris.org/project01</a>
+<a href="https://drive.google.com/file/d/1dPj4XNby9iuAs-47U9k3xtYy9hJ-ET0T/view">https://drive.google.com/file/d/1dPj4XNby9iuAs-47U9k3xtYy9hJ-ET0T/view</a>
+<a href="https://drive.google.com/file/d/1IsDnH0t7q_Im491LQ7_5_ajV0CokRbwR/view">hack chipset API</a> for names of in/out of chip bits</p>
+</details>
+<p>2020-11-07 18:30
+Stuck 1 hour error <a href="http://nand2tetris-questions-and-answers-forum.32033.n3.nabble.com/Forever-stuck-on-Loading-chip-td4030698.html">reason</a> </p>
+<div class="footnotes">
+<hr>
+<ol>
+<li id="fn-1">Bus numbers start from 0 and go up to width-1<a href="#fnref-1" class="footnote-backref">↩</a></li>
+</ol>
+</div><span id="navId" data="cb18c17b-5359-4c20-83f5-a9821c4b942d"></span>
+
+                
+      </section>
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+        
+          <hr>
+          <footer>
+            
+            
+
+            
+                
+              </div>
+          </footer>
+        
+    </div>
+</div>
+
+
+  
+
+  <div class="search-overlay"></div>
+
+</div>
+</body>
+</html>
