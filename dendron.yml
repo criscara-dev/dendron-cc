@@ -4,6 +4,7 @@ site:
     copyAssets: true
     siteHierarchies:
         - computer-science
+        - health
     siteRootDir: docs
     usePrettyRefs: true
 vaults:
