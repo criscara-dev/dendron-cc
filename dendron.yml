@@ -1,10 +1,10 @@
 site:
-    siteUrl: https://criscara-dev.github.io
     assetsPrefix:  /dendron-template
     copyAssets: true
     siteHierarchies:
         - computer-science
     siteRootDir: docs
+    siteUrl: "https://criscara-dev.github.io"
     usePrettyRefs: true
 vaults:
     - fsPath: vault
