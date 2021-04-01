@@ -2,8 +2,7 @@ site:
     assetsPrefix:  /digital-garden
     copyAssets: true
     siteHierarchies:
-        - health
-        - books
+        - computer-science
     siteRootDir: docs
     siteUrl: "https://criscara-dev.github.io"
     usePrettyRefs: true
