@@ -1,2 +1,2 @@
-# dendron-template
+# digital-garden
 Dendron online
