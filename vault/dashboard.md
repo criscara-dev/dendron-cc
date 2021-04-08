@@ -2,7 +2,7 @@
 id: c5b3ea92-5532-408b-8966-f62277df1ae7
 title: Dashboard
 desc: ''
-updated: 1609103500958
+updated: 1617910243821
 created: 1602692433243
 stub: false
 ---
@@ -13,33 +13,30 @@ stub: false
 
 * * *
 
-## Incoming event
+### As the old saying goes: Give a man a fish and you feed him for a day. Teach a man to fish and you feed him for a lifetime.
 
-**Dreamforce**
-Thank you for registering for Dreamforce to You 2020.
-Your registration ID is R-01486096
-
-Thank you for registering for Dreamforce to You 2020.
-Your registration ID is R-01486096
 
 ## Tomorrow tasks:
-- [ ] [Mantain your credentials](https://trailhead.salesforce.com/en/content/learn/trails/maintain-your-salesforce-certifications)
-- [ ] redo trailheads on Admin or on Intermediate
-- [ ] [trail](https://trailhead.salesforce.com/content/learn/modules/declarative-change-set-development) 
+
+- [ ] contact Nicola and Neil at Turing Trust for active collaboration to SF instance or Ioan for sub-contractor job?
+- [ ] Prepare for  JS I SF Cert 
+- [ ] my new Digital-Garden/blog
+- [ ] new CV
+- [ ] new LinkedIn profile/blog
 
 ## Should do
 
-- [ ] solve SF business requirements: make a map/diagram
-- [ ] this [trail](https://trailhead.salesforce.com/content/learn/modules/isv_plan/isv_plan_app_type)
-- [ ] watch [this](https://www.youtube.com/watch?v=yYbrkaW4CgM) on App builder before exam
+- [ ] carry on LinkedIn course 
+- [ ] Miro Consultant Training
+- [ ] BetterTrader courses 
+- [ ] working with me - based on SF guidelines in resources/ career exploration sourcepack
+- [ ] [Vista Portfolio for jobs](https://www.vistaequitypartners.com/companies/portfolio/)
+- [ ] new quest: https://trailhead.salesforce.com/superbadges
+- [ ] cert guides: https://www.salesforce.com/content/dam/web/en_us/www/documents/datasheets/certification-guide.pdf
+ 
+
 
 ## Recurrent to-do:
-
-- [[tech interview|salesforce-platform.platform-app-builder]]
-- [ ] complete trailhead [profile](https://trailblazer.me/id)
-- [ ] [weekly review for Kathryn](https://docs.google.com/document/d/1RcVrCH8Ch0T9X_k4-lo5Z8O21agcuhXG_AA9Zsb9CFc/edit)
-- [>] #[Computational-thinking](https://www.wolfram.com/wolfram-u/cbm-cause-or-correlation/) course
-- [ ] help Lucia to get SF Admin Cert
 
 ## career
 
@@ -61,43 +58,3 @@ How to style MD:
     flowchart LR
     cmd-shift-p -- run --> B[Markdown Preview Enhanced: Customize Css]
 ```
-
-...
-
-<div style="display:flex">
-<div class="col2">
-<div>Week: 15 Nov</div>
-<div> 
-
-- [w][review flashcards - Part 2](<https://trailhead.salesforce.com/en/content/learn/trails/platform-app-builder-certification-prep?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential>)
-  </div>
-  <div>
-
-- [w][Business admin Specialist Superbadge](<https://trailhead.salesforce.com/content/learn/superbadges/superbadge_business_specialist?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-administrator-credential>)</div>
-  </div>
-
-<div class="col2">Week: 22 Nov
-<div>
-
-- [ ] [review flashcards](https://trailhead.salesforce.com/en/content/learn/trails/platform-app-builder-certification-prep?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-platform-app-builder-credential)</div>
-  <div>do this</div>
-  </div>
-  </div>
-
-* * *
-
-Weekly Planner
-
-| Sun | Mon | Tue | Wed | Thur | Fri | Sat |
-| --- | --- | --- | --- | ---- | --- | --- |
-|     |     |     |     |      |     |     |
-|     |     |     |     |      |     |     |
-|     |     |     |     |      |     |     |
-|     |     |     |     |      |     |     |
-|     |     |     |     |      |     |     |
-|     |     |     |     |      |     |     |
-|     |     |     |     |      |     |     |
-|     |     |     |     |      |     |     |
-
-<input type="checkbox"> 
-
