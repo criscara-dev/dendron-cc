@@ -2,7 +2,7 @@
 id: bcc23d9b-3e7a-413d-be29-ce680f1531a6
 title: About me
 desc: ''
-updated: 1612471225567
+updated: 1618408249986
 created: 1602345930962
 stub: false
 ---
@@ -11,16 +11,36 @@ stub: false
 
 What I know something about
 - How I think about things
-- Common mistakes I make in my interaction with you:
-- My expectations to you
-- What frustrates me
-- How to reach out to me
-- How to give me feedback
-- Tips from others who have worked with me (ideally co-workers will eventually add to this)
+    - I always strive to get a big picture of the situation at first, understand deeply the issue/need to solve and I'm always try to see things from different perspectives and try to be in other people shoes to really understand them
 
-and
+- Common mistakes I make in my interaction with you:
+    - 
+
+- My expectations to you
+
+- What frustrates me
+    Don't be helped when I need it. Most of the time I prefer working on my own but if I'm stuck I tried to reach out and communicate with peers
+- How to reach out to me
+    - best way is email since I prefer to work asynchronously
+    - if the reason is quite serious and I didn't get back to you, give me a call
+- How to give me feedback
+    - 1-2-1 communication is essential and I like people to be completely open and honest with me
+- Tips from others who have worked with me (ideally co-workers will eventually add to this)
+    - I don't like to discuss politic, religions and other -isms (often about food choices). I'm a moderate person and I accept every believe but don't preach in the working environment
+
 what you value
+    - I value honest, humble and hard-worker type of people
+    - recognition and help to give and accept
+
 how you look at problems
+    - generally speaking, the way I'm solving problems can be sum up to:
+        1. Identify the problem, asking myself if this is really the real problem or there're underlined major issues;
+        2. Once identified the main focal problem, I like to think to the quickest, safest, and cost/effective solution; (using different tools such as ... check Miro)
+        3. What I need to know to build the solution, and where I need to focus on learning what I don't know yet;
+        4. build the solution 
+        5. test the solution
+        6. more than often train the clients/stakeholders
+        7. deploy/deliver the solution
 what your blind spots
 areas of growth are
 and how to build trust with you.
@@ -29,15 +49,10 @@ and how to build trust with you.
 
 ## Programming languages skills:
 
-I consider myself an ==expert-generalist==. In no particular order, I am a teacher, a mover, an artist, a web developer.
-I work primarily with Salesforce, but I am eager to learn about all aspects of programming with the idea to develop products and services that make people’s lives easier and more productive.
+I consider myself an ==expert-generalist==. In no particular order, I am a teacher, a colleague, a [...] developer, a learner enthusiast.
+I work primarily with Salesforce, but I am eager to learn about all aspects of programming, solving problems, while making data/heuristics driven decisions to have a positive impact on the Company/project I am operating.
 
-Product management:
-[[agile]]
-
-Area of expertise:
-
-## template
+## Template
 Template: A User Guide To Working With Cristian
 
 Introduction
@@ -86,10 +101,18 @@ Overall those are my 5 top values:
 
 ## My career goals
 I like either to work remotely or in a Office, ideal would be a mix if I'm living in the same City as my Company's Offices are.
-In the short term I'd like to learn better Apex but in the long term I'd like to be a better computational thinker and learn some other programing languages: Assembly, to understand how computer machines works, an imperative programming language such as Python, improve my knowledge of a functional programming language as JavaScript/Node.JS and finally learn something about Machine Learning language as PyTorch.
+In the short term I'd like to learn better Apex but in the long term I'd like to be a better computational thinker and learn some other programming languages: Assembly, to understand how computer machines works, an imperative programming language such as Python, improve my knowledge of a functional programming language as JavaScript/Node.JS and finally learn something about Machine Learning language as PyTorch.
 
 ## Where I want to be in the long term
  Using data-driven decisions/tools to Help Companies choose the right technologies to achieve their goals.(connecting the dots)
+
+## My interests
+
+
+
+---
+
+# Don't Publish from here...
 
  ## jobseeker checklist
 - [ ] Have a professional headshot taken

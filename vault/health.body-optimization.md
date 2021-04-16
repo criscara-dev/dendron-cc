@@ -2,7 +2,7 @@
 id: c6169ec7-2983-4fc4-9931-35b3e2a154da
 title: Body Optimization
 desc: ''
-updated: 1617219111649
+updated: 1618602200019
 created: 1616067166506
 ---
 
@@ -124,3 +124,4 @@ increase temperature extend the day...
         - inaling the diaphram moves down
         1. calm down quickly techniques = exale longer and more vigorous than inale
         2. phisiological side? 29' https://www.youtube.com/watch?v=ntfcfJ28eiU&list=PLPNW_gerXa4Pc8S2qoUQc5e8Ir97RLuVW&index=4
+        

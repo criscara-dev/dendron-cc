@@ -2,7 +2,7 @@
 id: 1eeab78a-4075-44c1-8316-d0d35922857a
 title: Javascript
 desc: ''
-updated: 1613059186819
+updated: 1618134475313
 created: 1602345804873
 stub: false
 ---
@@ -35,7 +35,7 @@ stub: false
 ## Scope & Context
 1. **Scope** is the biggest source of confusion regarding variables.
 
-`var` uses `funciton` scope
+`var` uses `function` scope
 `let` uses `block` scope
 
 `let` and `const` are **block scoped** (so they're not available outside the block) while `var` it is and as well a `function` since is `hoisted` (lifted up) and it is in the global scope or accessible from the `window` object.

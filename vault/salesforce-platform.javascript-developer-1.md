@@ -2,7 +2,7 @@
 id: bdf0d0a4-e383-4d9b-8d12-7c79a9645919
 title: JavaScript Developer 1
 desc: ''
-updated: 1612256272124
+updated: 1618163699605
 created: 1610206576325
 ---
 
@@ -10,8 +10,12 @@ created: 1610206576325
 
 ### References:
 [JS Trailmix - Main reference](https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-javascript-developer-i-credential)
+
 ![[computer-science.lang.javascript]]
 
+---
+## Map from Miro
+<iframe width="768" height="432" src="https://miro.com/app/live-embed/o9J_lKwLo90=/?moveToViewport=-1704,98,2393,1696" frameBorder="0" scrolling="no" allowFullScreen></iframe>
 ---
 
 ## [Module:JavaScript Skills for Salesforce Developers](https://trailhead.salesforce.com/content/learn/modules/javascript-essentials-salesforce-developers?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential)
@@ -37,9 +41,11 @@ console.log(num2); // "93" (a string)
  ==A browser’s primary job is to act as a client for a web server.==
 ![](/assets/images/2021-01-25-14-50-28.png)
 
-The ==DOM==
+The **DOM**
 When a page is requested and then received by a browser, the browser parses the HTML and creates a description, or a model, of that page. This model is used to draw the page in the browser’s viewport. It’s also surfaced to JavaScript through the DOM.
 `window.document.body.<...>`
+
+![](/assets/images/2021-04-11-12-42-52.png)
 
 [Conditional Rendering](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/create_conditional)
 When writing Lightning web components, you can explicitly define sections of the UI that are rendered only when certain conditions are met. You can do this by adding an `if:true` or `if:false` directive to a nested `template` tag. 
@@ -100,6 +106,20 @@ In a browser, the global context is the `window` object.
 
 - What is a Closure?
 When a function is declared, it holds a reference to any variables or arguments declared within it, and any variables it references in the scope that it is contained within. This combination of its variables and arguments along with local variables and arguments from its containing scope is called a closure. 
+
+```javascript
+const greet = function(typeGreet){
+  return function(name){
+    console.log(`${typeGreet}, ${name}, how are you today?`)
+  }
+}
+
+const morningGreet = greet('Goodmorning')
+const afternoonGreet = greet('Goodafternoon')
+
+morningGreet('Cris') // Goodmorning, Cris, how are you today?
+afternoonGreet('Lucy') // Goodafternoon, Lucy, how are you today? 
+```
 
 #### Write Asynchronous JavaScript
 
@@ -168,6 +188,7 @@ export default class ApexImperativeMethodWithParams extends LightningElement {
   </iframe>      
 </div>
 <br>
+
 - [JS Classes](https://trailhead.salesforce.com/content/learn/modules/modern-javascript-development/work-with-classes?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential) 
 
 |Member|Description|Example|
@@ -178,6 +199,7 @@ export default class ApexImperativeMethodWithParams extends LightningElement {
 |Getters and Setters|These accessor functions work just like object literals and work the same as they did in ES5. Essentially you just put the get and set keywords in front of the property name. If you define a getter without a setter, then the property becomes read-only.| `get area() { return this.height * this.width; }` `set area(value) { this.area = value; }`|
 
 - [Modules](https://trailhead.salesforce.com/content/learn/modules/modern-javascript-development/organize-code-with-modules?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential)
+see example here: [Codepen-modules-link](https://codepen.io/criscarart/project/editor/DaVoeo)
 
 - [Asynch JS & Promises](https://trailhead.salesforce.com/content/learn/modules/modern-javascript-development/write-asynchronous-javascript?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-javascript-developer-i-credential):
 The Promise object includes four methods that you may want to check out for more advanced promise scenarios. They include:
