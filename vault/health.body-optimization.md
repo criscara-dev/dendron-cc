@@ -2,7 +2,7 @@
 id: c6169ec7-2983-4fc4-9931-35b3e2a154da
 title: Body Optimization
 desc: ''
-updated: 1618602200019
+updated: 1618945127602
 created: 1616067166506
 ---
 
@@ -117,7 +117,7 @@ increase temperature extend the day...
  
 ### Tools for Managing Stress & Anxiety
 
-- what is stress? from neck to navel are the nerves responsable...
+- what is stress? from neck to navel are the nerves responsible...
     - sympathetic nerve ganglia they fire for stress -> release acetilcoline -> post... -> epinefrine (adrenaline): the stress response push certain system to be activate and not for other system (the agitation -> the blood go only to certain part of your body that support moving)
     - control stress = control response -> best tools to reduce stress activate control are: para sympathetic nervous system:
         - exaling the diaphram moves up
@@ -125,3 +125,12 @@ increase temperature extend the day...
         1. calm down quickly techniques = exale longer and more vigorous than inale
         2. phisiological side? 29' https://www.youtube.com/watch?v=ntfcfJ28eiU&list=PLPNW_gerXa4Pc8S2qoUQc5e8Ir97RLuVW&index=4
         
+    - quickest way to bring your stress down, physiologically speaking: ==double inhale -> exale== (autonomic activation); the opposite is true
+- what the stress is positive for?
+    - Acute vs light
+    - WimHof breathing and adrenaline release (cold bath) to mimic the stress response;
+    - inflammation response, we want it in the short term sometimes, like with physical wounds
+- ==the most powerful nootropic== is stress, deadline, fear of failure etc. with good night sleep
+- raising the stress treshold: put in a condition to increase the stress and when time to panic, try to be calm and conscious of the stressor and try to relax instead
+- when under physical stress, wide your gaze to increase relaxation in the mind while the boby is still in high reactivity = unifying mind and body
+https://www.youtube.com/watch?v=ntfcfJ28eiU&t=2356s 1:03:00
