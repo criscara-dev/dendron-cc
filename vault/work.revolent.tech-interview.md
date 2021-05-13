@@ -2,7 +2,7 @@
 id: d3c5b032-ccc4-483b-bad3-f325b8951be1
 title: Tech-interview
 desc: ''
-updated: 1617026481803
+updated: 1619693936772
 created: 1603706834819
 stub: false
 ---
@@ -158,26 +158,32 @@ Are you embracing disagreement?
 2021-01-05 09:04
 - [x] session on Interview Preparation with Ryan
 
+
 ---
 
-First Interview ever
-2021-03-29 10:42
-
-
-Francesco Rella tips: mi piacerebbe restare su un progetto per un po di tempo… un rapporto continuativo… e cosi lavoro anche meglio… se vedo un problema propongo soluzioni come un consulente;
-Platinum Partner SF Energy and Finance
-
-Ho: talento, passione, dinamismo, proattività.
-
-
 My questions:
-1. c'e' un progetto specifico per cui ricercate il mio ruolo? e su quale prodotto SF?
-2. which problem are you trying to solve? -> and so which tool (Apex, LWC, VF Page, Vlocity etc.) do you wan to use?
-3. Se mi prendete, quale sarebbe il mio ruolo nell'azienda e come e' strutturato il team?
-4. Adozione di SF in Italia...
-5. metodologie di SLDS usate? Agile?
-6. fate training o formazione specifiche per il ruolo?
-utlizzate sistemi esterni per testing?
+
+Questions for Stuart Garner
+
+1. how many people in the Dev team, really woth hands on projects?
+2. in your team website you have a lot of consultants but how many engineers actually? IS the team divided for skills? Even since you've 3 Apps on the AppExchange so this means you know your way around programming...
+3. how much is development/implementation and how much is tracking bugs, assistance?
+4. last blog post 11 march 2020 what is happened then?
+5. Currently, we have over 50 active support clients. where do you see yourself in 5 years? Any big project under the roof?
+6.  increase your fundraising via International fundraising App? is the Gift Aid App? 
+ Regular giving processing.. Integration in clients website
+7. training, learning together? any way you do it different from anyone else?
+8. you did not mentioon Communities websitesw; did you ever implement one?
+9. JumpStart Package, it sell well? how things arer going since Covid? ->
+10. did you just use words of mouth and no adverts but did you though about improving SEO for your website?
+11. what is the most succesfull solutions of the 3 Apps?
+
+==what is really the role about?==
+
+==Meaning and purpose==
+
+Giveclarity is a Salesforce.org Premium level partner for non-profits using Salesforce. We are also an ISV partner with three apps on the AppExchange.
+
 
 
 to review:

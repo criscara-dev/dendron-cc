@@ -2,7 +2,7 @@
 id: c6169ec7-2983-4fc4-9931-35b3e2a154da
 title: Body Optimization
 desc: ''
-updated: 1618945127602
+updated: 1620935651520
 created: 1616067166506
 ---
 
@@ -133,4 +133,4 @@ increase temperature extend the day...
 - ==the most powerful nootropic== is stress, deadline, fear of failure etc. with good night sleep
 - raising the stress treshold: put in a condition to increase the stress and when time to panic, try to be calm and conscious of the stressor and try to relax instead
 - when under physical stress, wide your gaze to increase relaxation in the mind while the boby is still in high reactivity = unifying mind and body
-https://www.youtube.com/watch?v=ntfcfJ28eiU&t=2356s 1:03:00
+- social connection prevent long term stress that is a very bad stress
