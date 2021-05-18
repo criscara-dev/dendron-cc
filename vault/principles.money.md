@@ -2,9 +2,15 @@
 id: f4db6466-1173-45de-b572-191ec5f91c89
 title: Money
 desc: ''
-updated: 1620156944346
+updated: 1621019708931
 created: 1619630753359
 ---
+
+##
+
+ex 5 days VWMA: volume-weighted moving average better than
+( d1 * V1 +d2 * V2 + d3 * V3 + d4 * V4 + d5 * V5 )/ V1 + V2 + V3 + V4 + V5
+ex. 5 days SMA: simple moving average = (d1+d2+d3+d4+d5)/5
 
 ## QFL
 

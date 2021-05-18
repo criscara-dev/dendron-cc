@@ -2,7 +2,7 @@
 id: 330bdbf5-b42a-4ba2-b70a-d38f16f851b1
 title: Book
 desc: ''
-updated: 1602420805706
+updated: 1621161746672
 created: 1602420805706
 stub: false
 ---
@@ -72,6 +72,7 @@ Almost no scandal would hurt an artist or writer
 - triad: fragile vs robust vs antifragile
 - opacity: ignore newspaper: newspapers as constant source of causes for things. In #complex-systems, a complex world, the notion of cause is 'suspect', it's nearly impossible to detect. The predictability of a specific events is low, caused by #causal-opacity
 - #proper-form vs #natural-movements
+- superfocus VS super diffuse mode for every activities; never in the middle as multitasking that lead to do nothing really well
 
 ## Heuristics:
 - He who has never sinned is less reilable than he who has made plenty of errors - though never the same error more than once - is more reliable than someone who has never made any.
