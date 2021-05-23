@@ -2,7 +2,7 @@
 id: c5b3ea92-5532-408b-8966-f62277df1ae7
 title: Dashboard
 desc: ''
-updated: 1621019246505
+updated: 1621780978840
 created: 1602692433243
 stub: false
 ---
@@ -19,8 +19,6 @@ stub: false
 ## Tomorrow tasks:
 
 - [ ] my new Digital-Garden/blog
-- [ ] new CV
-- [ ] new LinkedIn profile/blog
 
 ## Should do
 
@@ -35,24 +33,44 @@ stub: false
 
 ## Recurrent to-do:
 
-## career
+## career:
+
+- [ ] SF Platform 
+- [ ] [Business Analyst trail ](https://trailhead.salesforce.com/users/strailhead/trailmixes/build-your-business-analyst-career-on-salesforce)
+- [ ] Data Analysis 
+- [ ] SQL / SOQL 
+- [ ] Python 
+ 
 
 ## Reference:
-
-```
-- [ ] : not started
-- [w] : work in progress
-- [x] : done
-- [?] : feedback
-- [>] : postponed
-```
+https://trailhead.salesforce.com/career-path/business-analyst
 
 * * *
 
-How to style MD:
+### Choose side project:
 
-```mermaid
-    flowchart LR
-    cmd-shift-p -- run --> B[Markdown Preview Enhanced: Customize Css]
-```
+The best advice:
+
+1. Build skills
+2. find the Company that you like -> try to figure out what they do (to invite developer/data scientist/ HR to talk about what they do day to day and create a project from there...)  -> show them your work and where to go from here...  
+3. find a bug/issue in the COmpany you like and create a solution for that
+Skip the job search page -> straight to the target
+
+Personal project:
+1.  timespan: 6 weeks
+Facts to consider:
+1.  curiosity
+2.  can I learn something from it? what I did not expect? via negativa knowledge
+3. do I have a story to tell afterwards?
+
+---
+
+
+- [ ] cleanup Python scripts, move them to 'Python playground' on Desktop and push them to GitHub
+- [ ] re-check my cover and apply to Dalton Maag
+- [ ] plan new online notes/blog post 1 in md? about how to scripting in .py??
+
+
+- [ ] cancel three contract
+- [ ] cancel Miro
 

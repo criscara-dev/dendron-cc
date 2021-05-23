@@ -2,7 +2,7 @@
 id: c6169ec7-2983-4fc4-9931-35b3e2a154da
 title: Body Optimization
 desc: ''
-updated: 1620935651520
+updated: 1621788598520
 created: 1616067166506
 ---
 
@@ -134,3 +134,21 @@ increase temperature extend the day...
 - raising the stress treshold: put in a condition to increase the stress and when time to panic, try to be calm and conscious of the stressor and try to relax instead
 - when under physical stress, wide your gaze to increase relaxation in the mind while the boby is still in high reactivity = unifying mind and body
 - social connection prevent long term stress that is a very bad stress
+
+### How to Learn Skills Faster | Huberman Lab Podcast #20
+[link](https://www.youtube.com/watch?v=xJ0IBzCjEPk&t=490s)
+
+Skills:
+1. open loop : dart board
+2. close loop : something continuous
+
+what should I focus on?
+my limbs? my neurons? sense the position of the body? how allocate your attention?
+s
+Success: 
+- more repetions per time as possibly as you can at the same session to improve neuroplasticty
+- feedback: pay attention at the errors you made and
+- the neuro-chemicals rewards are releases when you are able to doing it 
+- in sleep/after a session neurons replay the motor execution correctly, elimination of errors and replay the session backwards in time for consolidation and accelleration of skill learning. (close your eyes 5 minutes so your brain can relax and play them)
+[ref Journal Neuron](https://pubmed.ncbi.nlm.nih.gov/22078504/)
+    - the errors are telling you what you need to concentrate on...

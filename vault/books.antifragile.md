@@ -2,7 +2,7 @@
 id: 330bdbf5-b42a-4ba2-b70a-d38f16f851b1
 title: Book
 desc: ''
-updated: 1621161746672
+updated: 1621326405854
 created: 1602420805706
 stub: false
 ---
@@ -52,7 +52,7 @@ stub: false
 ## Ideas
 - small commerce is the door to tolerance
 - add #stressors of hunger may make humans live less than their full potential
-- we concentrate better with abbit of background noise than nothing at all
+- we concentrate better with habit of background noise than nothing at all
 - get another job: jobs and professions fragile to reputational harm, aren't worth having. You need to be able to modify your exposure to control your position to reputational damage.
 Almost no scandal would hurt an artist or writer
 - people lend the most to those who need them the least
