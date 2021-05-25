@@ -2,7 +2,7 @@
 id: c6169ec7-2983-4fc4-9931-35b3e2a154da
 title: Body Optimization
 desc: ''
-updated: 1621788598520
+updated: 1621973101326
 created: 1616067166506
 ---
 
@@ -152,3 +152,12 @@ Success:
 - in sleep/after a session neurons replay the motor execution correctly, elimination of errors and replay the session backwards in time for consolidation and accelleration of skill learning. (close your eyes 5 minutes so your brain can relax and play them)
 [ref Journal Neuron](https://pubmed.ncbi.nlm.nih.gov/22078504/)
     - the errors are telling you what you need to concentrate on...
+    - error open opportunity for plasticity
+
+at the beginning you want to reduce uncertainty...
+... when you become a master you want uncertainty, challenge
+pay attention to one specific things
+
+DONT do very slow movement: errors allow for plasticity but the movement should be similar to the real action, too slow not realistic in a real scenario so, it does not help.
+
+- The cerebellum (mini brain):

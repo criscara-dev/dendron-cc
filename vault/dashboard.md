@@ -2,7 +2,7 @@
 id: c5b3ea92-5532-408b-8966-f62277df1ae7
 title: Dashboard
 desc: ''
-updated: 1621780978840
+updated: 1621968022436
 created: 1602692433243
 stub: false
 ---
@@ -55,22 +55,42 @@ The best advice:
 2. find the Company that you like -> try to figure out what they do (to invite developer/data scientist/ HR to talk about what they do day to day and create a project from there...)  -> show them your work and where to go from here...  
 3. find a bug/issue in the COmpany you like and create a solution for that
 Skip the job search page -> straight to the target
+4. double down on one ML application: choose between: no image recognition, NLP for sentiment, time series analysis -> Finance Industry
 
 Personal project:
+It need to be a corporate-style project
 1.  timespan: 6 weeks
 Facts to consider:
 1.  curiosity
 2.  can I learn something from it? what I did not expect? via negativa knowledge
 3. do I have a story to tell afterwards?
+4. good README.md
+5. add a video where you explain your project
 
 ---
 
+Today:
+Morning:
+- [x] working on .md file for password checker script as first blog post
 
-- [ ] cleanup Python scripts, move them to 'Python playground' on Desktop and push them to GitHub
-- [ ] re-check my cover and apply to Dalton Maag
-- [ ] plan new online notes/blog post 1 in md? about how to scripting in .py??
+Afternoon:
+- [ ] HU podcast how to learn skills faster
+
+Wednesday (tomorrow)
+Tomorrow:
+- [ ] working .md file for password checker script as first blog post - grammarly check
+- [ ] carry on website
+- [ ] Learning to learn
+
+Friday
+Morning
+- [ ] finish .md file for password checker script as first blog post
 
 
-- [ ] cancel three contract
-- [ ] cancel Miro
+
+---
+
+Next week (1st week June 2021)
+- [ ] blog post scraping websites in python
+    - [ ] while doing that re-test enomerate, etc. where I feel I'm week
 
