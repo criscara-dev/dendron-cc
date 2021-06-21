@@ -2,7 +2,7 @@
 id: c5b3ea92-5532-408b-8966-f62277df1ae7
 title: Dashboard
 desc: ''
-updated: 1621968022436
+updated: 1624264011043
 created: 1602692433243
 stub: false
 ---
@@ -18,17 +18,11 @@ stub: false
 
 ## Tomorrow tasks:
 
-- [ ] my new Digital-Garden/blog
-
-## Should do
-
-- [ ] Flow trailhead
-- [ ] working with me - based on SF guidelines in resources/ career exploration sourcepack
+- [ ] password checker video
+- [ ] web scraper post and code
+- [ ] email the guy at Bloomberg
 - [ ] [Vista Portfolio for jobs](https://www.vistaequitypartners.com/companies/portfolio/)
-- [ ] new quest: https://trailhead.salesforce.com/superbadges
-- [ ] cert guides: https://www.salesforce.com/content/dam/web/en_us/www/documents/datasheets/certification-guide.pdf
-- [ ] [MuleSoft trails](https://trailhead.salesforce.com/content/learn/modules/mulesoft-composer-install-and-config)
- 
+
 
 
 ## Recurrent to-do:
@@ -53,7 +47,7 @@ The best advice:
 
 1. Build skills
 2. find the Company that you like -> try to figure out what they do (to invite developer/data scientist/ HR to talk about what they do day to day and create a project from there...)  -> show them your work and where to go from here...  
-3. find a bug/issue in the COmpany you like and create a solution for that
+3. find a bug/issue in the Company you like and create a solution for that
 Skip the job search page -> straight to the target
 4. double down on one ML application: choose between: no image recognition, NLP for sentiment, time series analysis -> Finance Industry
 
@@ -69,28 +63,36 @@ Facts to consider:
 
 ---
 
-Today:
-Morning:
-- [x] working on .md file for password checker script as first blog post
 
-Afternoon:
-- [ ] HU podcast how to learn skills faster
-
-Wednesday (tomorrow)
-Tomorrow:
-- [ ] working .md file for password checker script as first blog post - grammarly check
-- [ ] carry on website
+Thursday:
+morning
+- [x] debugging notes on Miro python
+- [x] watermark pdf -> to github + README file
+- [x] apply jobs
+afternoon
 - [ ] Learning to learn
 
 Friday
 Morning
-- [ ] finish .md file for password checker script as first blog post
+- [ ] EM Twitts + SMS/EMail
+- [ ] fall detection (accellerometer) with parachute
+
+Afternoon
 
 
 
 ---
 
-Next week (1st week June 2021)
-- [ ] blog post scraping websites in python
-    - [ ] while doing that re-test enomerate, etc. where I feel I'm week
+- [ ] add simple Python API from github to my website
+- [x] 3. check my code for my current website
+- [ ] 1. A3 notes from paer to file on structure a project
+- [ ] 4. re-watch all videos and integrate new things learnt
+- [ ] 2. design new project
+    - [ ] what libs?
+    - [ ] which services? 
+    - [ ] Task 
+    - [ ] Task 
+    - [ ] Task 
+     
+
 
