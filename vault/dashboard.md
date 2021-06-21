@@ -2,7 +2,7 @@
 id: c5b3ea92-5532-408b-8966-f62277df1ae7
 title: Dashboard
 desc: ''
-updated: 1624264011043
+updated: 1624272404803
 created: 1602692433243
 stub: false
 ---
@@ -85,8 +85,8 @@ Afternoon
 
 - [ ] add simple Python API from github to my website
 - [x] 3. check my code for my current website
-- [ ] 1. A3 notes from paer to file on structure a project
-- [ ] 4. re-watch all videos and integrate new things learnt
+- [x] 1. A3 notes from paer to file on structure a project
+- [x] 4. re-watch all videos and integrate new things learnt
 - [ ] 2. design new project
     - [ ] what libs?
     - [ ] which services? 

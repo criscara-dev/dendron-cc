@@ -2,14 +2,14 @@
 id: pr6PIrg04IqmwQDQki8TD
 title: PROJECT-BLUEPRINT
 desc: ''
-updated: 1624266229733
+updated: 1624272821237
 created: 1624264141343
 ---
 
 # Typical Project structure:
 
 .
-├── app.py
+├── app.py ( called to start the server )
 ├── migrations
 │   ├── README
 │   ├── alembic.ini
@@ -40,8 +40,25 @@ created: 1624264141343
 │       └── home.html
 └── requirements.txt
 
-
 ---
+
+## Imports for average  Flask Project:
+
+```python
+
+# pip3 install <module>... or use a requirements.txt file: 
+# ex. pip3 install flask
+
+# for DB
+import os
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
+
+# for views:
+from flask import Blueprint,render_template,redirect,url_for
+
+```
 
 ## Create a Flask ENV in Conda:
 
@@ -63,9 +80,32 @@ flask run 3 or python3 <filename>.py
 Conda env list
 ```
 
+---
+
+## Create a virtual env in Python
+
+commands
+```python
+# from parent folder location: run
+python3 -m venv <folder-project-name>
+# it will appear a file called pyvenv.cfg
+#from parent folder run 
+. <folder-project-name>/bin/activate
+# and again from same location run: pip3 install flask
+# re-enter folder and set up loc env:
+#run: 
+export FLASK_APP=<server-name>.py
+#run: 
+export FLASK_ENV=development (for local dev env)
+# .html files go into a 'templates' folder and css/js go into 'static' folder
+```
+
+VSCode
+env in VSCode you can choose from blue bar at the bottom
 
 
 ---
+
 
 ## How to run a Flask app (3 steps):
 
@@ -125,3 +165,45 @@ flask db upgrade
 ```
 
 ---
+
+
+## CRUD operation in DB
+
+
+
+## REST Representational State Transfer
+
+- [ ] is REST supported in the APP? -> RESTful API
+
+1. Postman
+2. REST verbs:
+    1. ├── POST
+    2. ├── GET
+    3. ├── PUT
+    4. ├── DELETE
+
+3. Auth
+4. Implement a RESTful API web App
+
+CRUS INA  SIMPLE WAY:
+* C 
+    ```python
+    new_instance = Class('...',...)
+    db.session.add(new_instance)
+    ```
+* R
+    ```python
+    Class.query.all() or ... othe rORM options
+    ```
+* U
+    ```python
+    Class.query.get(Id).property = <new_value>
+    db.session.add(Class.query.get(Id).property)
+    db.session.commit()
+    ```
+* D
+    ```python
+    Class.query.get(Id)
+    db.session.delete(Class.query.get(Id))
+    db.session.commit()
+    ```
