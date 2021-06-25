@@ -1,11 +1,20 @@
 site:
-    assetsPrefix:  /digital-garden
+    assetsPrefix: /digital-garden
     copyAssets: true
     siteHierarchies:
         - computer-science
     siteRootDir: docs
-    siteUrl: "https://criscara-dev.github.io"
+    siteUrl: 'https://criscara-dev.github.io'
     usePrettyRefs: true
 vaults:
-    - fsPath: vault
+    -
+        fsPath: vault
 version: 0
+initializeRemoteVaults: true
+journal:
+    dailyDomain: daily
+    name: journal
+    dateFormat: y.MM.dd
+    addBehavior: childOfDomain
+    firstDayOfWeek: 1
+dendronVersion: 0.47.1

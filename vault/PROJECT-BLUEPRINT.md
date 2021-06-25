@@ -2,7 +2,7 @@
 id: pr6PIrg04IqmwQDQki8TD
 title: PROJECT-BLUEPRINT
 desc: ''
-updated: 1624272821237
+updated: 1624608814222
 created: 1624264141343
 ---
 
@@ -141,7 +141,7 @@ ORM object relational mapper,
 let connection between Flask and SQL DB via Python
 
 ```zsh
-Pip install Flask-SQLAlchemy
+pip3 install Flask-SQLAlchemy
 ```
 
 How to update change once created a db in Flask?
@@ -167,13 +167,15 @@ flask db upgrade
 ---
 
 
-## CRUD operation in DB
+## CRUD operation in DB - REST Representational State Transfer
 
+Rest is supposed to be STATELESS, servers are stateless (they don't remember, every request is a new request...)
 
+Python use `dict` to send data but via the HTTP we need JSON so the module `jsonify` can convert `dict -> json`
 
-## REST Representational State Transfer
+Ex. from GitHub: [reference](https://github.com/criscara-dev/simple-flask-api)
 
-- [ ] is REST supported in the APP? -> RESTful API
+- [x] is REST supported in the APP? -> RESTful API
 
 1. Postman
 2. REST verbs:
@@ -185,15 +187,16 @@ flask db upgrade
 3. Auth
 4. Implement a RESTful API web App
 
-CRUS INA  SIMPLE WAY:
+CRUD IN A SIMPLE WAY within ORM (not raw DBs SQL):
 * C 
     ```python
     new_instance = Class('...',...)
     db.session.add(new_instance)
+    db.session.commit()
     ```
 * R
     ```python
-    Class.query.all() or ... othe rORM options
+    Class.query.all() or ... other ORM options
     ```
 * U
     ```python
@@ -207,3 +210,275 @@ CRUS INA  SIMPLE WAY:
     db.session.delete(Class.query.get(Id))
     db.session.commit()
     ```
+
+
+## Auth:
+
+```python
+
+from flask_bcrypt import Bcrypt
+from werkzeug.security import generate_password_hash, ...
+from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user
+```
+---
+
+## OAuth:
+
+To Auth from an external service like Google, FB etc.
+
+OAth 2.0
+Flask_Oath
+[Flask-Dance](https://flask-dance.readthedocs.io/en/latest/)
+
+```python
+from flask_dance.contrib.github import make_github_blueprint, github
+```
+
+---
+
+## Designing an API
+
+- Test first API Design:
+start in Postman by creating the API url:
+1) create a collection:
+2: define the purpose of each path:
+
+methiod | path | description 
+-----|----- | -----
+GET | `http://localhost:5000/item`  | this should return a list of items, each in JSON format 
+GET |`http://localhost:5000/item/<string:name>`  | this will return a specific item, uniquely identify by its name. 
+POST | `http://localhost:5000/item`  | this should return a list of items, each in JSON format 
+DELETE |`http://localhost:5000/item/<string:name>`  | this will delete the specific item, uniquely identify by its name. 
+PUT |`http://localhost:5000/item/<string:name>`  | this will update the specific item, uniquely identify by its name. If it exists
+
+In a POST/PUT request you need to add:
+1. Headers: content-type: application/json
+2. the body: 
+    ```{
+         "example:":"value here"
+         ...
+         }
+    ```
+
+---
+
+## how to make packages
+
+create a __init__.py in a folder ( a normal folder is not a package)
+
+Folders
+* Models: internal representation (helper)
+* Resources: external representation
+
+
+---
+
+### REST API basic process
+
+#### 1. starting template
+
+```python
+# app.py
+from flask import Flask
+from flask_restful import Resource, Api
+
+app = Flask(__name__)
+api = Api(app)
+
+class ListItem(Resource):
+
+    def get(self,name):
+        pass
+
+    def post(self,name):
+        pass
+
+    def delete(self,name):
+       pass
+    
+    def put(self,name):
+       pass
+
+class Lists(Resource):
+    pass
+
+api.add_resource(ListItem,'/ListItem/<string:name>')
+api.add_resource(Lists,'/ListItems/')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+> The Resource Object is the One that let us create Flask-RESTful Classes
+
+#### Test API endpoints on Postman
+
+Easy to do; no auth require yet
+```python
+# key/value to add
+Content-Type / Application/json
+```
+
+
+#### 2. Who can access the API?
+everyone, so let's add:
+[Flask-JWT](https://pythonhosted.org/Flask-JWT/) for authentication
+```zsh
+pip3 install Flask-JWT
+```
+and then add the authentication from JWT:
+```python
+from flask_jwt import JWT, jwt_required, current_identity
+from werkzeug.security import safe_str_cmp
+from user import User
+
+# external imported here:
+# user.py
+class User(object):
+    def __init__(self, id, username, password):
+        self.id = id
+        self.username = username
+        self.password = password
+
+    def __str__(self):
+        return "User(id='%s')" % self.id
+
+users = [
+    User(1, 'user1', 'abcxyz'),
+    User(2, 'user2', 'abcxyz'),
+]
+
+username_table = {u.username: u for u in users}
+userid_table = {u.id: u for u in users}
+
+def authenticate(username, password):
+    user = username_table.get(username, None)
+    if user and safe_str_cmp(user.password.encode('utf-8'), password.encode('utf-8')):
+        return user
+
+def identity(payload):
+    user_id = payload['identity']
+    return userid_table.get(user_id, None)
+# end user.py
+
+# and add those too:
+app.config['SECRET_KEY'] = 'super-secret'
+jwt = JWT(app, authenticate, identity)
+
+```
+Class User that has authenticate and identity functions
+
+```python
+# app.py
+
+# How we make sure that auth is required to people trying our API? -> Use the decorator
+
+# ...
+class ListItem(Resource):
+
+    @jwt_required()
+    def get(self,name):
+        pass
+# ...
+```
+#### Test API endpoints on Postman
+
+This time navigate to the path create automatically by JWT: `/auth`
+
+- create a body:
+```python
+    {
+        'username':'user1',
+        'password':'abcxyz'
+    }
+
+# and pass the auth token...
+```
+
+#### 3. Create a Flask Model using the ORM Flask-SQLAlchemy
+
+[Flask-SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/)
+
+```python
+#app.py
+from flask-sqlalchemy import Flask-SQLAlchemy
+from flask-migrate import Migrate
+import os
+
+# add more config:
+basedir = os.path.abspath(os.path.dirname(__file__))
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir,'data.sqlite') # basically create a DB in the folder that contain this app.py file
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+Migrate(app,db)
+
+db = SQLAlchemy(app)
+
+```
+
+Now, on the same file (not recommended) or another one to import, create the Model (the DB table(s))
+
+```python
+# app.py
+# ...
+
+class Item(db.Model):
+    name = db.Column(db.String(80),primary_key=True)
+    def  __init__(self,name):
+        self.name = name
+        
+    def json(self):
+        return { 'name':self.name}      
+```
+
+and for the classes for Resource, create the methods as:
+
+```python
+
+class Item(Resource):
+    def get(self,name)):
+    item = Class.query.filter_by(name=name).first()
+    
+    if item:
+        return item.json()
+    else:
+        return {'name':None}, 404
+
+    def post(self,name):
+        db.session.add(item)
+        db.session.commit()
+        return item.json()
+
+    def delete(self, name):
+        item = Class.query.filter_by(name=name).first()
+        db.session.delete(item)
+        db.session.commit()
+        return {'note':'delete success'}
+
+class Lists(Resource): # all items
+    def get(self):
+        items = Class.query.all()
+        return  [item.json() for item in items]
+
+```
+
+Finally, don't forget to run:
+
+```zsh
+export FLASK_APP=<server-name>.py
+# Flask-migrate:
+# Sets up the migrations directory
+flask db init # it create a data.sqlite file
+
+# to Sets up the migration file
+flask db migrate -m "some message" # Migrations folder creation
+
+# to Updates the database with the migration
+flask db upgrade
+
+# And then, everytime I change something in the model, run:
+flask db migrate -m “new message for updates“
+flask db upgrade
+```
+to create the DB an add migration services, to use everytime I change the Model.
+
+Now, you should be able to see the file for Migrations and thew `data.sqlite` file
