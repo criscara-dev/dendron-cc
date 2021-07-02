@@ -2,7 +2,7 @@
 id: c5b3ea92-5532-408b-8966-f62277df1ae7
 title: Dashboard
 desc: ''
-updated: 1624272404803
+updated: 1625257047907
 created: 1602692433243
 stub: false
 ---
@@ -17,6 +17,17 @@ stub: false
 
 
 ## Tomorrow tasks:
+
+- [ ] re write APP in PyCharm and add the part for implementation in README for data from csv to db and add to GitHub
+- [ ] DB course 
+- [ ] read docs for https://flask-sqlalchemy.palletsprojects.com/en/2.x/ 
+- [ ] read doss for https://flask-marshmallow.readthedocs.io/en/latest/ 
+- [ ] public StackOverflow request for help
+ 
+ STRING fro Date
+ BOOLEAN for Y/N
+ 
+---
 
 - [ ] password checker video
 - [ ] web scraper post and code
@@ -90,9 +101,3 @@ Afternoon
 - [ ] 2. design new project
     - [ ] what libs?
     - [ ] which services? 
-    - [ ] Task 
-    - [ ] Task 
-    - [ ] Task 
-     
-
-

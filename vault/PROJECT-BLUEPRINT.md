@@ -2,7 +2,7 @@
 id: pr6PIrg04IqmwQDQki8TD
 title: PROJECT-BLUEPRINT
 desc: ''
-updated: 1624608814222
+updated: 1625256202774
 created: 1624264141343
 ---
 
@@ -262,7 +262,7 @@ In a POST/PUT request you need to add:
 
 ---
 
-## how to make packages
+## how to make packages: `__init__`
 
 create a __init__.py in a folder ( a normal folder is not a package)
 
@@ -395,7 +395,7 @@ This time navigate to the path create automatically by JWT: `/auth`
 # and pass the auth token...
 ```
 
-#### 3. Create a Flask Model using the ORM Flask-SQLAlchemy
+#### 3. Create a: Model in Flask App (using the ORM Flask-SQLAlchemy) and perform CRUD operations in Resource
 
 [Flask-SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/)
 
@@ -415,19 +415,28 @@ db = SQLAlchemy(app)
 
 ```
 
-Now, on the same file (not recommended) or another one to import, create the Model (the DB table(s))
+Now, on the same file (not recommended) or another one to import, create the Model (that generates the DB table/s )
 
 ```python
 # app.py
-# ...
+# Model creation; 
 
 class Item(db.Model):
+    # optionally create a table name
+    __tablename__ = 'items'
+
+    # create column/s
     name = db.Column(db.String(80),primary_key=True)
+
+    # add methods for __init__ and __repr__
     def  __init__(self,name):
         self.name = name
+    
+    def __repr__(self):
+        pass # for debug like return f'{self.name}'
         
-    def json(self):
-        return { 'name':self.name}      
+        # def json(self):
+        #     return { 'name':self.name}      
 ```
 
 and for the classes for Resource, create the methods as:
@@ -453,6 +462,9 @@ class Item(Resource):
         db.session.delete(item)
         db.session.commit()
         return {'note':'delete success'}
+
+    def put(self,name):
+        pass
 
 class Lists(Resource): # all items
     def get(self):
@@ -482,3 +494,55 @@ flask db upgrade
 to create the DB an add migration services, to use everytime I change the Model.
 
 Now, you should be able to see the file for Migrations and thew `data.sqlite` file
+
+#### 4. Create Views functions - that have their forms
+```python
+# app.py
+
+@app.route('/')
+def index():
+    return render_template('/home.html')
+
+# other routes...
+
+# and create the forms for those Views:
+def add_item():
+    # addForm is the one we created in the forms.py or here below... *
+    form = addForm() 
+    if form.validate_on_submit():
+        name = form.name.data
+
+        new_item = Item(name)
+        db.session.add(new_item)
+        db.session.commit()
+
+        return redirect(url_for('list_items')) # if successful add redirect here
+    return render_template('add.html',form=form)
+
+# forms are on this file or better on another an imported to keep everything clean
+
+# * below, the addForm here or to be imported...
+class AddForm(FlaskForm):
+    name = StringField('Name of Owner:')
+    pup_id = IntegerField("Id of Puppy: ")
+    submit = SubmitField('Add Owner')
+```
+
+## consider Bootstrap Forms to improve look of forms in flask
+
+https://getbootstrap.com/docs/5.0/forms/overview/
+
+
+## env var:
+app.config['SECRET_KEY'] = 'secret'
+
+
+---
+
+• Going to a page will always do a GET
+• But there are many other things we can do, such as POST, DELETE,
+PUT, OPTIONS, HEAD, etc.
+
+• Rest are stateless
+
+
