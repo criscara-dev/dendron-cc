@@ -2,7 +2,7 @@
 id: pr6PIrg04IqmwQDQki8TD
 title: PROJECT-BLUEPRINT
 desc: ''
-updated: 1625256202774
+updated: 1625393863515
 created: 1624264141343
 ---
 
@@ -544,5 +544,7 @@ app.config['SECRET_KEY'] = 'secret'
 PUT, OPTIONS, HEAD, etc.
 
 • Rest are stateless
+
+
 
 

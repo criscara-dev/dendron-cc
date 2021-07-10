@@ -2,7 +2,7 @@
 id: c5b3ea92-5532-408b-8966-f62277df1ae7
 title: Dashboard
 desc: ''
-updated: 1625257047907
+updated: 1625914028215
 created: 1602692433243
 stub: false
 ---
@@ -18,21 +18,19 @@ stub: false
 
 ## Tomorrow tasks:
 
+https://www.linkedin.com/jobs/view/2627769888/post-apply/skill-assessments/list/?postApplyJobId=2627769888&refId=Gxit5lgE9QpYPqTA9OvZ4A%3D%3D&trackingId=NMIRSTMW2uPRa4g3VNlpCw%3D%3D
+
 - [ ] re write APP in PyCharm and add the part for implementation in README for data from csv to db and add to GitHub
 - [ ] DB course 
-- [ ] read docs for https://flask-sqlalchemy.palletsprojects.com/en/2.x/ 
-- [ ] read doss for https://flask-marshmallow.readthedocs.io/en/latest/ 
-- [ ] public StackOverflow request for help
+
  
- STRING fro Date
- BOOLEAN for Y/N
+
+
  
 ---
 
-- [ ] password checker video
-- [ ] web scraper post and code
-- [ ] email the guy at Bloomberg
 - [ ] [Vista Portfolio for jobs](https://www.vistaequitypartners.com/companies/portfolio/)
+https://builtin.com/jobs
 
 
 
@@ -72,25 +70,6 @@ Facts to consider:
 4. good README.md
 5. add a video where you explain your project
 
----
-
-
-Thursday:
-morning
-- [x] debugging notes on Miro python
-- [x] watermark pdf -> to github + README file
-- [x] apply jobs
-afternoon
-- [ ] Learning to learn
-
-Friday
-Morning
-- [ ] EM Twitts + SMS/EMail
-- [ ] fall detection (accellerometer) with parachute
-
-Afternoon
-
-
 
 ---
 
@@ -101,3 +80,38 @@ Afternoon
 - [ ] 2. design new project
     - [ ] what libs?
     - [ ] which services? 
+
+---
+Sunday
+
+- review large app + notes
+
+
+
+
+
+
+Week
+
+morning
+- [ ] Tutorial
+- [ ] Project
+- [ ] Tutorial
+- [ ] Project  
+
+afternoon
+- [ ] Python review 
+- [ ] DBs 
+
+break
+- [ ] Tutorial
+- [ ] Project
+- [ ] Tutorial
+- [ ] Project  
+ 
+
+
+    
+ Weekend
+
+ review Python and DB maps

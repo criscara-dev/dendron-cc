@@ -2,7 +2,7 @@
 id: c6169ec7-2983-4fc4-9931-35b3e2a154da
 title: Body Optimization
 desc: ''
-updated: 1621973101326
+updated: 1625419504906
 created: 1616067166506
 ---
 
@@ -160,4 +160,10 @@ pay attention to one specific things
 
 DONT do very slow movement: errors allow for plasticity but the movement should be similar to the real action, too slow not realistic in a real scenario so, it does not help.
 
-- The cerebellum (mini brain):
+- The cerebellum (mini brain): to extend range of motion:
+look at your left shoulder then right: 1:10:00 -> 1:20:00
+
+Motivation, Visualization on top of physical training:
+15' a day for 5 days a week (moto-neurons adaptation: 1:25:00 -> 1:40:00 )
+Helping compounds:
+- alpha GPC before the training ( with low caffeine)

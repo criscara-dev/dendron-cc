@@ -2,7 +2,7 @@
 id: d0beeb2a-dfb0-4c99-a139-67d642d08c3e
 title: Python
 desc: ''
-updated: 1624285649512
+updated: 1625912033436
 created: 1617975101150
 ---
 
@@ -26,3 +26,9 @@ Composition!
 In the child class don't use `super().__init__(<parent-arg>)`
 but instead use ` *args # as argument intead of the one you need`
 ref. https://www.udemy.com/course/rest-api-flask-and-python/learn/lecture/15927826#overview
+
+
+## serialization
+
+Process of 'flatten out' complex data (Data Structures) in a 'stream' in order to send/store this data ( as a binary, json, xml, yaml, etc.).
+De-serialize is the opposite process to open and read the complex data.
