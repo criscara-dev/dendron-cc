@@ -547,4 +547,7 @@ PUT, OPTIONS, HEAD, etc.
 
 
 
+---
 
+when a retrieve a DB column, if is an ID is ok that I retrieve the first, sine is unique but what if is a name?
+I can have more items with a name but first() retrieve only th first; so let's add `unique=True` in the db.Column creation.

@@ -73,8 +73,8 @@ seratonine ...
 - [mucuna pruriens](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3942911/) for dopamine, sperm motility etc...
 - L-carnitine increase pregnancy, POS (sindrome ovaio policistico), male fertility, decrease depression, autism
 - decrease L-carnitine
-- Bioma: pro and pre-biotics -> Healthy gut micro biom -> fermented foods
-- I want to promote a micro biom that is good for me, based on my habits and I've been raise (in terms of food) that influence the nervous system
+- Bioma: pro and pre-biotics -> Healthy gut micro biome -> fermented foods
+- I want to promote a micro biome that is good for me, based on my habits and I've been raise (in terms of food) that influence the nervous system
 - ...Diets Agenda, every one works and still it depends...fermented foods always support your micro biom
 
 2021-03-18 11:33

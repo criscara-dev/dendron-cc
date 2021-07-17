@@ -100,18 +100,14 @@ morning
 - [ ] Project  
 
 afternoon
-- [ ] Python review 
+- [ ] README file
 - [ ] DBs 
-
-break
-- [ ] Tutorial
-- [ ] Project
-- [ ] Tutorial
-- [ ] Project  
- 
+- [ ] front end show my API (Davide suggestions)
 
 
     
  Weekend
 
  review Python and DB maps
+
+ 

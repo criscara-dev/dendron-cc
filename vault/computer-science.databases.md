@@ -2,7 +2,7 @@
 id: 0CjJLOqJFRLlz5Up3GBId
 title: Databases
 desc: ''
-updated: 1625928807937
+updated: 1626531330068
 created: 1625429021643
 ---
 
@@ -43,6 +43,7 @@ concatenate and rename the column, example:
 2. scalar: >=1 record -> multiple values (CONCAT)
 
 exercise:
+```sql
 select avg(salary) from employees
 select max(birth_date) from employees
 select count(*) from "public"."towns"
@@ -56,6 +57,7 @@ multi
 line
 comments
 */
+```
 
 ex.
 ```sql
@@ -81,7 +83,10 @@ Multiple selection:
 ```sql
 FROM
 WHERE
+GROUP BY
+HAVING  
 SELECT
+ORDER
 ```
 
 ###  operator precedence
@@ -103,6 +108,7 @@ where SQL see an OR it start a new operation
 ```sql
 WHERE (AND ... AND)
 OR (... AND  ... AND)
+```
 
 ex. order execution:
 ```sql
@@ -158,3 +164,324 @@ WHERE <column> IS NULL
 ```
 
 ## IN filtering
+
+## partial lookup
+
+```sql
+
+LIKE '%xxxx_'
+
+_ is a placeholder
+% is a wildcard
+```
+
+to use LIKE you need use CAST on the column as TEXT
+
+```sql
+CAST(salary as text)
+-- or
+column::text
+```
+
+Case insensitive matches
+
+```sql
+-- ex.
+name ILIKE 'CRIS%';
+```
+
+Time in SQL, use the standard UTC!
+
+```sql
+SET TIME ZONE 'UTC'
+
+# set DB-user for PostGres to UTC forever ( not only the session ):
+ALTER USER <name> SET timezone='UTC'
+```
+
+PostGres uses ISO-8601
+YYY-MM-DDTHH:MM:SS
+2021-0101T00:00:00+02:00 where +... is the Timezone
+
+What DateTime is now?
+```sql
+select now()
+```
+
+Always consider with working with TimeStamp and TimeZone what you're storing
+```sql
+TIMESTAMP WITHOUT TIME ZONE
+TIMESTAMP WITH TIME ZONE
+``` 
+Dates operators
+
+```sql
+SELECT now()::date
+SELECT CURRENT_DATE
+
+SELECT to_char(CURRENT_DATE, 'dd/mm/yy')
+SELECT to_char(CURRENT_DATE, 'ddd')
+
+-- d,m,y are FORMAT modifiers
+
+-- dates calculations:
+SELECT date '2000-01-01'
+SELECT now() - '2000-01-01'
+
+```
+
+
+calculate age - age difference
+```sql
+-- pass age or column
+SELECT AGE(date '1979/01/01')
+SELECT AGE(<column>) ex. <column> = birthdate
+-- difference
+SELECT AGE(date '1979/01/01', '1980/12/31')
+extract day, month, year
+SELECT EXTRACT(DAY FROM date '1979/01/01') AS DAY
+SELECT EXTRACT(MONTH FROM date '1979/01/01') AS MONTH
+SELECT EXTRACT(YEAR FROM date '1979/01/01') AS YEAR
+
+
+-- truncate: to check difference in same year, month, days
+SELECT DATE_TRUNC('year', date '1979/01/01')
+SELECT DATE_TRUNC('month', date '1979/01/01')
+
+```
+
+INTERVAL useful to subtract a defined value
+```sql
+now() - interval '1 year 2 months 1 day'
+```
+
+ex. 
+```sql
+
+-- return people ove ra certain age. calculated from birthdate
+SELECT AGE(birth_date), * FROM employees WHERE ( EXTRACT (YEAR FROM AGE(birth_date)) ) > 60 ;
+-- or
+SELECT count(birth_date) FROM employees WHERE birth_date < now() - interval '61 years'
+
+-- how many people hire in Feb?
+SELECT count(emp_no) FROM employees where EXTRACT (MONTH FROM hire_date) = 2;
+
+-- How many employees were born in november?
+SELECT count(emp_no) FROM employees where EXTRACT (MONTH FROM birth_date) = 11;
+
+-- Who is the oldest employee? (Use the analytical function MAX)
+SELECT MAX(AGE(birth_date)) FROM employees;
+
+-- How many orders were made in January 2004?
+select count( orderid ) from orders where EXTRACT (MONTH FROM orderdate) = 1 and EXTRACT (year FROM orderdate) = 2004
+SELECT COUNT(orderid) FROM orders WHERE DATE_TRUNC('month', orderdate) = date '2004-01-01';
+
+```
+
+DISTINT, to remove duplicates, pass column(s)
+
+```sql
+-- Question: What unique titles do we have?
+SELECT DISTINCT title FROM titles;
+
+-- Question: How many unique birth dates are there?
+SELECT count(DISTINCT birth_date) FROM employees;
+
+-- Question: Can I get a list of distinct life expectancy ages/ no nulls!
+SELECT DISTINCT lifeexpectancy,NAME FROM country WHERE lifeexpectancy IS NOT NULL ORDER BY lifeexpectancy;
+
+```
+
+
+ORDER DATA: USE ORDER BY <COLUMN> [ASC,DESC]
+
+```sql
+select first_name, last_name from employees
+ORDER BY first_name,last_name DESC
+ORDER BY length(last_name) DESC
+
+-- Sort employees by first name ascending and last name descending
+elect first_name, last_name from employees ORDER BY first_name ASC,last_name DESC
+--  Sort employees by age
+select first_name, age(birth_date) from employees ORDER BY birth_date DESC
+-- Sort employees who's name starts with a "k" by hire_date
+select first_name from employees where first_name ilike 'k%' ORDER BY hire_date 
+```
+
+## MULTI TABLE SELECT
+###  JOIN: aggregate data from 2 table thatc an map to the column of another table (link primary key to the foreign key)
+```sql
+SELECT a.emp_no, b.salary, b.from_date FROM employees AS a, salaries AS b 
+WHERE emp_no = b.emp_no
+ORDER BY a.emp_no
+
+-- better way to write this with JOIN:
+SELECT a.emp_no, CONCAT(first_name,last_name) AS "name", b.salary 
+FROM employees AS a
+INNER JOIN salaries AS b ON b.emp_no = a.emp_no
+ORDER BY a.emp_no
+
+-- self JOISELECT a.emp_no, CONCAT(first_name,last_name) AS "name", b.salary 
+SELECT a.id, a.name AS "employee", b.name as "supervisor name" 
+FROM employees AS a, employee as b
+WHERE a.supervisodId = b.id
+-- to INNER JOIN
+SELECT a.id, a.name AS "employee", b.name as "supervisor name" 
+FROM employees AS a
+INNER JOIN employee as b
+ON a.supervisodId = b.id
+```
+### LEFT JOIN /  RIGHT JOIN add the dayta that don't have a match from table B
+
+```SQL
+-- count everyone does not match the second column:
+SELECT count(emp.emp_no) 
+FROM employees AS emp
+LEFT JOIN dept_manager as dep ON emp.emp_no = dep.emp_no
+where dep.emp_no is null
+```
+
+```sql
+SELECT a.emp_no ,
+CONCAT(a.first_name, a.last_name) as "name" ,
+b.salary,
+coalesce( c.title, 'No title change' ) ,
+COALESCE( c.from_date::text,'-') AS "title taken on"
+FROM employees AS a
+INNER JOIN salaries AS b ON a.emp_no = b.emp_no
+LEFT JOIN titles AS c
+ON c.emp_no = a.emp_no AND (
+    c.from_date = (b. from_date + interval '2 days') OR
+    c.from_date = b.from_date
+)
+ORDER BY a.emp_no
+```
+
+---
+
+### CROSS JOIN
+create a combination ( just right in the mathematical term ) of every possible row
+
+### FULL JOIN
+give back every row even if not 'match' where the not match empty is going to be a <null> field
+ex.
+
+id | id
+--|--
+1 | 1
+2 | 2
+3 | <null>
+4 | <null>
+<null> | 30
+<null> | 40
+
+ex. on JOIN:
+```sql
+
+--  Question: Get all orders from customers who live in Ohio (OH), New York (NY) or Oregon (OR) state
+select cus.firstname, cus.lastname,o.orderid
+from orders as o
+inner join customers as cus
+on o.customerid = cus.customerid
+where cus.state in ('OH','NY', 'OR')
+ORDER BY o.orderid
+
+-- Question: Show me the inventory for each product
+select i.quan_in_stock,p.prod_id
+from products as p
+inner join inventory as i
+on p.prod_id = i.prod_id
+
+-- Question: Show me for each employee which department they work in
+select e.first_name, e.last_name, dp.dept_name
+from employees as e
+inner join dept_emp as de on de.emp_no = e.emp_no
+inner join departments as dp on dp.dept_no = de.dept_no
+
+```
+
+and we can use `USING` to map to primary to foreign key, so the last above can be rewritten as:
+
+```sql
+select e.first_name, e.last_name, dp.dept_name
+from employees as e
+inner join dept_emp as de using(emp_no)
+inner join departments as dp USING(dept_no)
+```
+
+## GROUP BY
+We use almost exclusively 'GROUP BY' with aggregate functions
+
+SPLIT-APPLY-COMBINE
+
+```sql
+select dept_no, count(emp_no) --every column not in the GROUP BY need an aggregate function
+from dept_emp
+group By dept_no
+```
+
+```sql
+-- How many people were hired on any given hire date?
+SELECT hire_date, COUNT(emp_no) as "amount"
+FROM employees
+GROUP BY hire_date
+ORDER BY "amount" DESC;
+
+-- Show me all the employees, hired after 1991 and count the amount of positions they've had
+SELECT e.emp_no, count(t.title) as "amount of titles"
+FROM employees as e
+JOIN titles as t USING(emp_no)
+WHERE EXTRACT (YEAR FROM e.hire_date) > 1991
+GROUP BY e.emp_no
+ORDER BY e.emp_no;
+
+-- Show me all the employees that work in the department development and the from and to date.
+SELECT e.emp_no, de.from_date, de.to_date
+FROM employees as e
+JOIN dept_emp as de USING(emp_no)
+join departments as dep using(dept_no)
+WHERE dept_name = 'Development'
+GROUP BY e.emp_no, de.from_date, de.to_date
+ORDER BY e.emp_no, de.to_date;
+-- or
+SELECT e.emp_no, de.from_date, de.to_date
+FROM employees as e
+JOIN dept_emp as de USING(emp_no)
+WHERE dept_no = 'd005'
+GROUP BY e.emp_no, de.from_date, de.to_date
+```
+
+WHERE VS HAVING
+
+`where` apply a filter to every row, `having` to a group of row.
+
+```sql
+--  Show me all the employees, hired after 1991, that have had more than 2 titles
+SELECT e.emp_no, count(t.title) as "# titles over 2"
+FROM employees as e
+JOIN titles as t USING(emp_no)
+WHERE EXTRACT (YEAR FROM e.hire_date) > 1991
+GROUP BY e.emp_no
+having count(t.title) > 2
+ORDER BY e.emp_no;
+
+-- Show me all the employees that have had more than 15 salary changes that work in the department development
+
+SELECT e.emp_no, count(s.from_date) as "amount of raises"
+FROM employees as e
+JOIN salaries as s USING(emp_no)
+JOIN dept_emp AS de USING(emp_no)
+WHERE de.dept_no = 'd005'
+GROUP BY e.emp_no
+HAVING count(s.from_date) > 15
+ORDER BY e.emp_no;
+
+-- Show me all the employees that have worked for multiple departments
+
+SELECT e.emp_no, count(de.dept_no) as "worked for # departments"
+FROM employees as e
+JOIN dept_emp AS de USING(emp_no)
+GROUP BY e.emp_no
+HAVING count(de.dept_no) > 1
+ORDER BY e.emp_no;
+```

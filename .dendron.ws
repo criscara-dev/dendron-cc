@@ -1,1 +1,1 @@
-{"version":"0.48.1","activationTime":1625393829019}
+{"version":"0.49.0","activationTime":1626191034480}
