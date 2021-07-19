@@ -81,6 +81,11 @@ recycled plastic
 long time no dry
 quick 
 
+3. auto cleaning teca for LEGO collection etc.
+ex. [ecometa](https://www.ecometa.store/en/)
+
+4.  Correlator| PatternFinder | TraderIdeas
+
 
 ## Skew strategy
 
@@ -89,3 +94,6 @@ quick
 ## Principles
 
 Imperfection: everything that can be improved is a business opportunity
+
+## Ideas and Execution
+All ideas sucks until brought to life by execution

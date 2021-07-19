@@ -32,3 +32,7 @@ ref. https://www.udemy.com/course/rest-api-flask-and-python/learn/lecture/159278
 
 Process of 'flatten out' complex data (Data Structures) in a 'stream' in order to send/store this data ( as a binary, json, xml, yaml, etc.).
 De-serialize is the opposite process to open and read the complex data.
+
+
+## testing Python
+[piramid tests](https://martinfowler.com/articles/practical-test-pyramid.html)

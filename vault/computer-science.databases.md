@@ -485,3 +485,58 @@ GROUP BY e.emp_no
 HAVING count(de.dept_no) > 1
 ORDER BY e.emp_no;
 ```
+
+
+## UNION to SELECT from different tables but it does not remove duplicates
+
+```sql
+SELECT col1, SUM(col2)
+FROM table
+GROUP BY col1
+UNION
+SELECT SUM(col2)
+FROM table
+
+```
+
+## GROUPING SETS
+subclause of `GROUP BY` that allow you to define multiple grouping
+
+Ex usage: if you want to find how much has been sold for day, month, year, easily done by avoiding to much `grouping`
+
+```sql
+select EXTRACT (year from orderdate) as "year",
+       EXTRACT (MONTH from orderdate) as "month",
+       EXTRACT (DAY from orderdate) as "year",
+       sum(ol.quantity)
+from orderlines as ol 
+group by
+    ROLLUP (
+    EXTRACT (year from orderdate),
+    EXTRACT (MONTH from orderdate),
+    EXTRACT (DAY from orderdate)    
+    )
+order by 
+EXTRACT (year from orderdate),
+EXTRACT (MONTH from orderdate),
+EXTRACT (DAY from orderdate)
+```
+
+## WINDOW FUNCTION
+How do we apply functions against a set of rows related to the current row?
+
+ex. add the AVG o every salary so we could visually see how much each employee is from the AVG.
+
+WINDOW FUNCTIONS create new column based on functions performed on a subset or "window"of the data and to get data back faster I can use LIMIT ... BUT anyway, the OVER() go __over__ the full set of data provided, not the limited ;)
+
+## PARTITION BY
+to divide rows into groups to apply the function against (optional)
+It expand the OVER clause
+```sql
+*, AVG(salary)
+ over(Partition by d.dept_name)
+from salaries
+join dept_emp as de using (emp_no)
+join departments as d using (dept_no)
+```
+

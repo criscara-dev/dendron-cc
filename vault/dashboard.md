@@ -100,9 +100,9 @@ morning
 - [ ] Project  
 
 afternoon
-- [ ] README file
 - [ ] DBs 
-- [ ] front end show my API (Davide suggestions)
+- [ ] README file
+- [ ] docs
 
 
     
@@ -110,4 +110,3 @@ afternoon
 
  review Python and DB maps
 
- 

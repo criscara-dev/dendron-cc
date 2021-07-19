@@ -550,4 +550,76 @@ PUT, OPTIONS, HEAD, etc.
 ---
 
 when a retrieve a DB column, if is an ID is ok that I retrieve the first, sine is unique but what if is a name?
-I can have more items with a name but first() retrieve only th first; so let's add `unique=True` in the db.Column creation.
+I can have more items with a name but first() retrieve only the first; so let's add `unique=True` in the db.Column creation.
+
+
+---
+
+## Data serialization with Marshmallow
+
+> parsing incoming data
+
+Do you want to send data?
+Marshmallow serialization is turning `classes` (objects) into `Dict`.
+
+```python
+
+from  marshmallow import Schema, fields
+
+class BookSchema(Schema):
+    title = fields.Str()
+    author = fields.Str()
+
+class Book:
+    def __init__(self, title,author, description):
+        self.title = title
+        self.author = author
+        self.description = description
+
+book = Book('Fastlane','MJ Demarco','How to escape the rat race')
+print(book)
+book_schema = BookSchema()
+book_dict = book_schema.dump(book)
+print(book_dict)
+```
+
+Do you want to use serialized data ( so, de-serialize it, in order to use it with Python) coming over from the web?
+```python
+`varname_json = request.json()
+  varname_data = var_schema.load(varname_json)
+  # and where I want to use the data
+  varname_schema.dump(obj_instance)
+  ```
+
+Marshmallow de-serialization is turning `Dict` into `classes` (objects) .
+```python
+class BookSchema(Schema):
+    title = fields.Str()
+    author = fields.Str()
+    description = fields.Str()
+
+class Book:
+    def __init__(self, title,author, description):
+        self.title = title
+        self.author = author
+        self.description = description
+
+book_data = {
+    'title':'Fastlane',
+    'author':'MJ Demarco',
+    'description':'How to escape the rat race'
+}
+
+book_schema = BookSchema()
+book = book_schema.load(book_data)
+book_obj = Book(**book)
+print(book_obj.title)
+```
+
+> Pipenv add a layer of security inb top of Virtualenv
+
+## MIND Pipfile and Pipfile.lock ( real installed modules)
+
+on PyCharm be sure you've installed compatible version and check always you've got the modules in the lock file!
+
+## [Flask or Django](https://testdriven.io/blog/django-vs-flask/)
