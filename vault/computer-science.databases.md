@@ -525,18 +525,59 @@ EXTRACT (DAY from orderdate)
 ## WINDOW FUNCTION
 How do we apply functions against a set of rows related to the current row?
 
-ex. add the AVG o every salary so we could visually see how much each employee is from the AVG.
+ex. add the AVG of every salary so we could visually see how much each employee is from the AVG.
 
-WINDOW FUNCTIONS create new column based on functions performed on a subset or "window"of the data and to get data back faster I can use LIMIT ... BUT anyway, the OVER() go __over__ the full set of data provided, not the limited ;)
+WINDOW FUNCTIONS create new column based on functions performed on a subset or "window"of the data and to get data back faster I can use LIMIT ... BUT thanks to it, the OVER() go __over__ the full set of data provided, not the limited ;)
 
 ## PARTITION BY
 to divide rows into groups to apply the function against (optional)
 It expand the OVER clause
 ```sql
-*, AVG(salary)
- over(Partition by d.dept_name)
-from salaries
-join dept_emp as de using (emp_no)
-join departments as d using (dept_no)
+    *, AVG(salary)
+    over(Partition by d.dept_name)
+    from salaries
+    join dept_emp as de using (emp_no)
+    join departments as d using (dept_no)
 ```
 
+## why using FRAMING in window functions
+
+Key | Meaning
+--|--   
+ROWS OR RANGE | WHETHER YOU WANT TO USE A RANGE OR ROWS AS A FRAME
+PRECEDING | ROWS BEFORE THE CURRENT ONE
+FOLLOWING | ROWS AFTER THE CURRENT ONE
+UNBOUNDED PRECEDING OR FOLLOWING | RETURNS BEFORE OR AFTER
+CURRENT ROW | YOUR CURRENT ROW
+
+```sql
+select 
+    emp_no, 
+    salary, 
+    count( salary) over( 
+     Partition by emp_no
+     order by salary
+     range BETWEEN UNBOUNDED PRECEDING and UNBOUNDED FOLLOWING
+        )
+from salaries
+join dept_emp as de using (emp_no)
+join departments as d using (dept_no)   
+```
+
+how to find a salary, the last one you got with a window function? basically the current salary?
+
+```sql
+select  DISTINCt e.emp_no, 
+        e.first_name,
+        d.dept_name,
+    LAST_VALUE(s.salary) over(  
+     Partition by e.emp_no
+     order by s.from_date
+     range BETWEEN UNBOUNDED PRECEDING and UNBOUNDED FOLLOWING
+        ) as "Current Salary"
+from salaries as s
+join employees as e using (emp_no)
+join dept_emp as de using (emp_no)
+join departments as d using (dept_no) 
+order by e.emp_no 
+```

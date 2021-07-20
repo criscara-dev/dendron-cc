@@ -555,7 +555,7 @@ I can have more items with a name but first() retrieve only the first; so let's 
 
 ---
 
-## Data serialization with Marshmallow
+## Data serialization with Marshmallow | Why Marshmallow?
 
 > parsing incoming data
 
@@ -585,13 +585,14 @@ print(book_dict)
 
 Do you want to use serialized data ( so, de-serialize it, in order to use it with Python) coming over from the web?
 ```python
-`varname_json = request.json()
+varname_json = request.json()
   varname_data = var_schema.load(varname_json)
   # and where I want to use the data
   varname_schema.dump(obj_instance)
-  ```
+```
 
 Marshmallow de-serialization is turning `Dict` into `classes` (objects) .
+
 ```python
 class BookSchema(Schema):
     title = fields.Str()
@@ -618,8 +619,14 @@ print(book_obj.title)
 
 > Pipenv add a layer of security inb top of Virtualenv
 
-## MIND Pipfile and Pipfile.lock ( real installed modules)
+#### MIND Pipfile and Pipfile.lock ( real installed modules)
+
+#### load_only vs dump_only
+
+* load_only for info that you want to see
+* dump_only for get all info
 
 on PyCharm be sure you've installed compatible version and check always you've got the modules in the lock file!
 
 ## [Flask or Django](https://testdriven.io/blog/django-vs-flask/)
+

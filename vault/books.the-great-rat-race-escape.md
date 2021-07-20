@@ -67,6 +67,33 @@ ANE results
 ---
 
 
+## Skew strategy
+
+1 negative attribute can destroy 10 positives
+
+## Principles
+
+Specialize: go from specialized skills to specialize units
+Imperfection: everything that can be improved is a business opportunity
+Pond: if you want to catch more fish, you'll need to put yourself in a bigger body of water.
+The Drake Equation: business plan are speculation; CENTS, TAM, skews, medium, replication, vision, and exit ideas suffice for a sufficient business plan
+
+## Ideas and Execution
+All ideas sucks until brought to life by execution
+
+## TUM vs TAM
+total unreachable market vs Total addressable market
+Chains, franchises, distribution, units, and licenses can transform TUm into TAM
+
+## the 3A strategy - Applying the scientific method via an iterative process
+
+Before Pivot:
+Act
+Assess
+Adjust 
+
+
+
 ---
 
 # Ideas
@@ -74,6 +101,7 @@ ANE results
 1 .Time investing 101 course: 
 Time investing = investing in time not trading time for money
 your gain: free-time, money from free time activities
+Free yourself from time...
  
 
 2. oil painting brushes-cover:
@@ -86,14 +114,3 @@ ex. [ecometa](https://www.ecometa.store/en/)
 
 4.  Correlator| PatternFinder | TraderIdeas
 
-
-## Skew strategy
-
-1 negative attribute can destroy 10 positives
-
-## Principles
-
-Imperfection: everything that can be improved is a business opportunity
-
-## Ideas and Execution
-All ideas sucks until brought to life by execution

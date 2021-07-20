@@ -2,7 +2,7 @@
 id: c5b3ea92-5532-408b-8966-f62277df1ae7
 title: Dashboard
 desc: ''
-updated: 1625914028215
+updated: 1626795688468
 created: 1602692433243
 stub: false
 ---
@@ -94,19 +94,40 @@ Sunday
 Week
 
 morning
-- [ ] Tutorial
-- [ ] Project
-- [ ] Tutorial
-- [ ] Project  
+- [x] Tutorial
+- [x] the GREscape Book notes + book on trading / patterns in the markets
+- [x] docs
+- [ ] README file
 
 afternoon
 - [ ] DBs 
-- [ ] README file
-- [ ] docs
+- [ ] New Project
+- [ ] Which resources?
+- [ ] PyCharm Academy???
+- [ ] Why Marshmallow?
+
+
+
+<details><summary>Webinar
+</summary>
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+PRODID:-//Microsoft Corporation//Outlook 11.0 MIMEDIR//EN
+BEGIN:VEVENT
+UID:1100460f68b22cfdc4
+DTSTAMP:20210720T083650Z
+DTSTART:20210722T160000Z
+DTEND:20210722T170000Z
+SUMMARY:Simple\, Fast Frontends With htmx
+LOCATION:https://www.youtube.com/watch?v=cBfz4W_KvEI
+DESCRIPTION:In this webinar we introduce htmx\, part of a recent trend to slim down frontends and return to the original principles of the web\, while still providing faster interactivity. htmx has taken off recently\, and Carson Gross\, its creator\, is dropping by to explain the why\, how and what.\n\nCarson is a WebStorm fan\, and since his motto is the HOWL stack – hypertext on whatever language – he and Paul will collaborate to show usage on plain servers and Python backends. \n\nJoin the webinar: www.youtube.com/watch?v=cBfz4W_KvEI&ab_channel=PyCharmbyJetBrains\nThursday\, July 22 6:00 PM CEST (12:00 PM EDT)
+END:VEVENT
+END:VCALENDAR
+</details>
 
 
     
  Weekend
 
  review Python and DB maps
-
