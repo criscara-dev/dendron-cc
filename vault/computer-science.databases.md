@@ -534,7 +534,7 @@ to divide rows into groups to apply the function against (optional)
 It expand the OVER clause
 ```sql
     *, AVG(salary)
-    over(Partition by d.dept_name)
+    OVER (PARTITION by d.dept_name)
     from salaries
     join dept_emp as de using (emp_no)
     join departments as d using (dept_no)
@@ -580,4 +580,69 @@ join employees as e using (emp_no)
 join dept_emp as de using (emp_no)
 join departments as d using (dept_no) 
 order by e.emp_no 
+```
+
+how to select cheap item in a category?
+
+```sql
+select
+prod_id,
+price,
+category,
+min(price) over (PARTITION by category) as  "cheapest in category"
+from products
+```
+
+how to know how my price are compares the the item with the highest price in thew same category?
+how to ge the most expansive price in a category?
+
+```sql
+select
+prod_id,
+price,
+category,
+last_value(price) over (
+PARTITION by category order by price
+range between unbounded preceding and UNBOUNDED FOLLOWING
+) as "most expansive"
+from products
+
+# or better and simpler:
+select
+prod_id,
+price,
+category,
+max(price) over (
+PARTITION by category order by price
+range between unbounded preceding and UNBOUNDED FOLLOWING
+) as "most expansive"
+from products
+```
+
+how much cumulatively a customer has bought at our store?
+```sql
+select
+o.orderid,
+o.customerid,
+o.netamount,
+sum(o.netamount) over (
+    PARTITION by o.customerid 
+    order by o.orderid
+    ) as "cum cum"
+from orders as o
+order by o.customerid
+```
+
+how to know where my product is positioned in the category by price?
+
+```sql
+select
+prod_id,
+price,
+category,
+row_number() over (
+    PARTITION by category
+    order by price
+    ) as "position in the cetegory by price"
+from products
 ```
