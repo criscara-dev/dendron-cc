@@ -77,6 +77,9 @@ Specialize: go from specialized skills to specialize units
 Imperfection: everything that can be improved is a business opportunity
 Pond: if you want to catch more fish, you'll need to put yourself in a bigger body of water.
 The Drake Equation: business plan are speculation; CENTS, TAM, skews, medium, replication, vision, and exit ideas suffice for a sufficient business plan
+Desert of desertion: expectation that your business will be difficult, and motivation will wane, to the point of quitting
+Baseball principle: one swing doesn't make a season;entrepreneurial career should be segregated into a at-bats, games, and seasons.
+Probability Hacking: choices hack probabilities ( and better choices more, ence luck! )
 
 ## Ideas and Execution
 All ideas sucks until brought to life by execution
@@ -113,4 +116,16 @@ quick
 ex. [ecometa](https://www.ecometa.store/en/)
 
 4.  Correlator| PatternFinder | TraderIdeas
+
+5. Garbage path to wealth: only investing in yourself
+    - investing in yourself
+    - bonds
+    - index funds or
+    - stocks 15/20 in diverse sectors
+    - options
+    - ~~crypto~~
+    - real estate
+    - open a business
+
+6. high density closed-cell polyethylene foam for crash bouldering pad
 

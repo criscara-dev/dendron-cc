@@ -529,7 +529,7 @@ ex. add the AVG of every salary so we could visually see how much each employee 
 
 WINDOW FUNCTIONS create new column based on functions performed on a subset or "window"of the data and to get data back faster I can use LIMIT ... BUT thanks to it, the OVER() go __over__ the full set of data provided, not the limited ;)
 
-## PARTITION BY
+### PARTITION BY
 to divide rows into groups to apply the function against (optional)
 It expand the OVER clause
 ```sql
@@ -540,7 +540,7 @@ It expand the OVER clause
     join departments as d using (dept_no)
 ```
 
-## why using FRAMING in window functions
+### why using FRAMING in window functions
 
 Key | Meaning
 --|--   
@@ -567,7 +567,7 @@ join departments as d using (dept_no)
 how to find a salary, the last one you got with a window function? basically the current salary?
 
 ```sql
-select  DISTINCt e.emp_no, 
+select  DISTINCT e.emp_no, 
         e.first_name,
         d.dept_name,
     LAST_VALUE(s.salary) over(  
@@ -645,4 +645,171 @@ row_number() over (
     order by price
     ) as "position in the cetegory by price"
 from products
+```
+
+### Window exercises
+```sql
+/*
+*  Show the population per continent
+*  Database: World
+*  Table: Country
+*/
+
+SELECT
+  DISTINCT continent,
+  SUM(population) OVER w1 as"continent population"
+FROM country 
+WINDOW w1 AS( PARTITION BY continent );
+
+/*
+*  To the previous query add on the ability to calculate the percentage of the world population
+*  What that means is that you will divide the population of that continent by the total population and multiply by 100 to get a percentage.
+*  Make sure you convert the population numbers to float using `population::float` otherwise you may see zero pop up
+*
+*  Database: World
+*  Table: Country
+*/
+
+SELECT
+  DISTINCT continent,
+  SUM(population) OVER w1 as"continent population",
+  CONCAT( 
+      ROUND( 
+          ( 
+            SUM( population::float4 ) OVER w1 / 
+            SUM( population::float4 ) OVER() 
+          ) * 100    
+      ),'%' ) as "percentage of population"
+FROM country 
+WINDOW w1 AS( PARTITION BY continent );
+
+
+/*
+*  Count the number of towns per region
+*
+*  Database: France
+*  Table: Regions (Join + Window function)
+*/
+
+SELECT 
+DISTINCT r.id, 
+r."name", 
+COUNT(t.id) OVER (
+    PARTITION BY r.id
+    ORDER BY r."name"
+) AS "# of towns"
+FROM regions AS r
+JOIN departments AS d ON r.code = d.region 
+JOIN towns AS t ON d.code = t.department
+ORDER BY r.id;
+```
+
+
+How to select something when a criteria is met?
+Use `CASE ... WHEN` statements!
+
+```sql
+/**
+* Database: Store
+* Table: products
+* Create a case statement that's named "price class" where if a product is over 20 dollars you show 'expensive'
+* if it's between 10 and 20 you show 'average' 
+* and of is lower than or equal to 10 you show 'cheap'.
+*/
+
+SELECT prod_id, title, price, 
+    CASE   
+      WHEN  price > 20 THEN 'expensive'
+      WHEN  price <= 10 THEN  'cheap'
+      WHEN  price BETWEEN 10 and 20  THEN 'average'
+    END AS "price class"
+FROM products
+```
+
+How to return `NULL` if a condition is met?
+
+```sql
+/*
+* DB: Store
+* Table: products
+* Question: Show NULL when the product is not on special (0)
+*/
+
+SELECT prod_id, title, price, NULLIF(special, 0) as "special"
+FROM products
+```
+
+---
+
+## VIEWS
+
+How to store the result of a query?
+And what if I want to query the result of a query?
+
+Types:
+- materialised: store the data on a physical device and every time the table change, the function update again
+- non-materialised: re-run each time the view is called on | store only the name definition
+
+==We can query VIEWS like we can query TABLES==
+
+create a query:
+`CREATE VIEW view_name AS query`
+`CREATE OR REPLACE view_name AS query`
+`ALTER VIEW view_name RENAME TO view_name`
+`DROP VIEW [ IF EXIST ] view_name`
+
+How to get the _current salary_ in a easier way than WINDOW functions (with PARTITION, frame (RANGE...) ?
+
+```sql
+
+-- create view last_salary_change as 
+-- select e.emp_no, 
+--      MAX(s.from_date)
+-- from salaries as s
+-- join employees as e using (emp_no)
+-- join dept_emp as de using (emp_no)
+-- join departments as d using (dept_no) 
+-- GROUP by e.emp_no
+-- order by e.emp_no  
+
+-- select * from last_salary_change
+
+select * from salaries
+JOIN last_salary_change as l using (emp_no)
+where from_date = l.max
+order by emp_no
+-- this is far better intuitive than wondow functions...
+```
+
+ex.
+
+```sql
+/*
+*  Create a view "90-95" that:
+*  Shows me all the employees, hired between 1990 and 1995
+*  Database: Employees
+*/
+
+CREATE VIEW "90-95" AS
+SELECT *
+FROM employees as e
+WHERE EXTRACT (YEAR FROM e.hire_date) BETWEEN 1990 AND 1995
+ORDER BY e.emp_no;
+
+/*
+*  Create a view "bigbucks" that:
+*  Shows me all employees that have ever had a salary over 80000
+*  Database: Employees
+*/
+
+CREATE VIEW "bigbucks" AS
+SELECT e.emp_no, s.salary
+FROM employees as e
+JOIN salaries as s USING(emp_no)
+WHERE s.salary > 80000
+ORDER BY s.salary;
+
+select * from salaries
+join bigbucks using (emp_no)  
+order by emp_no
 ```

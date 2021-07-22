@@ -2,7 +2,7 @@
 id: c5b3ea92-5532-408b-8966-f62277df1ae7
 title: Dashboard
 desc: ''
-updated: 1626795688468
+updated: 1626877296107
 created: 1602692433243
 stub: false
 ---
@@ -97,13 +97,13 @@ morning
 - [x] Tutorial
 - [x] the GREscape Book notes + book on trading / patterns in the markets
 - [x] docs
-- [ ] README file
+- [x] README file
 
 afternoon
-- [ ] DBs 
-- [ ] New Project
+- [x] DBs 
+- [ ] New Project: Trading Cryptos Application with Flask | managing stocks Portfolio App | Financial private Dashboard saving
 - [ ] Which resources?
-- [ ] PyCharm Academy???
+- [x] PyCharm Academy???
 - [ ] Why Marshmallow?
 
 
