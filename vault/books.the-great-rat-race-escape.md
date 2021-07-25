@@ -80,6 +80,14 @@ The Drake Equation: business plan are speculation; CENTS, TAM, skews, medium, re
 Desert of desertion: expectation that your business will be difficult, and motivation will wane, to the point of quitting
 Baseball principle: one swing doesn't make a season;entrepreneurial career should be segregated into a at-bats, games, and seasons.
 Probability Hacking: choices hack probabilities ( and better choices more, ence luck! )
+Optimum experience Strategy: select a business that optimizes the customer experience
+The engagement Strategy: if you want an endless book full of ideas waiting to be exploited, start engaging the world; you can't spot opportunity in a bubble!
+Cinderella Principle
+Critical path strategy: without a defined problem, also the solution remain undefined; put yourself in the face of a problem and you won't get lost.
+The right book strategy: read the book that you need to read to solve the next problem in your 3A cycle
+
+
+
 
 ## Ideas and Execution
 All ideas sucks until brought to life by execution
@@ -115,7 +123,7 @@ quick
 3. auto cleaning teca for LEGO collection etc.
 ex. [ecometa](https://www.ecometa.store/en/)
 
-4.  Correlator| PatternFinder | TraderIdeas
+4.  Correlates| PatternFinder | TraderIdeas
 
 5. Garbage path to wealth: only investing in yourself
     - investing in yourself

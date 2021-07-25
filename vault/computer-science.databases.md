@@ -309,7 +309,7 @@ select first_name from employees where first_name ilike 'k%' ORDER BY hire_date
 ```
 
 ## MULTI TABLE SELECT
-###  JOIN: aggregate data from 2 table thatc an map to the column of another table (link primary key to the foreign key)
+###  JOIN: aggregate data from 2 table that map to the column of another table (link primary key to the foreign key)
 ```sql
 SELECT a.emp_no, b.salary, b.from_date FROM employees AS a, salaries AS b 
 WHERE emp_no = b.emp_no
@@ -813,3 +813,96 @@ select * from salaries
 join bigbucks using (emp_no)  
 order by emp_no
 ```
+
+## INDEX (speed up queries)
+A construct to improve query performance;
+==it'a pointer to data in a table.==
+Types:
+* single-column
+* multi-column
+* unique
+* partial
+* implicit indexes
+
+```sql
+CREATE index <name> ON table (column)
+DROP index
+```
+
+When use index?
+* index foreign keys
+* index primnary keys and unique columns
+* index on columns that end ip in the ORDER BY/ WHERE clause often
+* other cases like below, not!
+    * don't add an index just to add an index
+    * don't use indexes on small tables
+    * ddon't use on tables that are updated
+    * don't use on columns that can contain null values
+    * don't use on columns that have large values
+
+When use a specific index?
+- index algorithms: everyone has a different purpose
+    * B-tree: default one
+    * hash: =
+    * gin: multiple values in a single field
+    * gist: for geometric data and full-text search
+
+```sql
+CREATE UNIQUE INDEX <name> ON <TABLE> (column) USING  <method>
+```
+
+## How to know what a query is doing?
+
+Use `EXPLAIN ANALYZE` to look at the context of what our query is doing and HEAP/time spent to run the query.
+
+## Subquery - inner query or inner select -
+
+When to use JOIN or SUB-QUERIES?
+
+```sql
+SELECT name, salary
+FROM salaries
+WHERE salary =
+( SELECT AVG(salary) FROM salaries)
+
+-- adding an extra column to every row
+SELECT name, salary
+   ( SELECT AVG(salary) FROM salaries )
+AS "Company average salary"
+FROM salaries
+
+-- return one or more rows
+-- return one or more columns
+-- correlated
+-- nested
+
+```
+
+
+How to write a subqueries?
+1. parenthesis enclosed
+2. on the right side of comparison operators
+3. `order by` will be ignored
+
+### ex Subqueries operators
+WHERE EXIST ( subquery ... )
+WHERE <column> IN ( subquery ... )
+WHERE <column> ANY ( subquery ... )
+WHERE <column> > ALL ( subquery ... )
+WHERE <column> = ( subquery ... )
+
+```sql
+SELECT emp_no, first_name, last_name
+FROM employees
+WHERE emp_no IN (
+    SELECT emp_no
+    FROM dept_emp
+    WHERE dept_no = (
+        SELECT dept_no 
+        FROM dept_manager
+        WHERE emp_no = 110183
+    )
+)
+ORDER BY emp_no
+```
+
