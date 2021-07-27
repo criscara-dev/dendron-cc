@@ -2,7 +2,7 @@
 id: 0CjJLOqJFRLlz5Up3GBId
 title: Databases
 desc: ''
-updated: 1626531330068
+updated: 1627315701297
 created: 1625429021643
 ---
 
@@ -26,7 +26,7 @@ SQL --- CRUD -> DBMS -> DB ( the software )
 
 DBs type in a Company (Amazon):
 1. OLTP online transaction processing
-2. OLAP online analytical processing
+2. OLAP online analytical processing (backoffice)
 
 DCL Data Control Language
 DDL Data Definition Language
@@ -906,3 +906,24 @@ WHERE emp_no IN (
 ORDER BY emp_no
 ```
 
+---
+
+## DB Management
+
+### Type of DB
+
+Regular: 
+    - postgres ( default one )
+template: 
+    - template0 ( backup for template1, don't touch it! it's the safety default)
+    - template1
+
+```zsh
+psql -U <user> <database>
+
+# ti get DB info
+\conninfo 
+```
+
+create a DB
+`CREATE DATABASE <name> ... options`

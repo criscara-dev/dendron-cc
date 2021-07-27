@@ -2,7 +2,7 @@
 id: 00B_YQB7jpXS0RDLZH-D3
 title: The Great Rat Race Escape
 desc: ''
-updated: 1625990349642
+updated: 1627371176749
 created: 1625928722856
 ---
 
@@ -85,6 +85,9 @@ The engagement Strategy: if you want an endless book full of ideas waiting to be
 Cinderella Principle
 Critical path strategy: without a defined problem, also the solution remain undefined; put yourself in the face of a problem and you won't get lost.
 The right book strategy: read the book that you need to read to solve the next problem in your 3A cycle
+Search Cipher Strategy: hunt for search cipher to unlock knowledge
+The Productocracy Strategy: pull not push;
+Are you a pusher (seller of perceived/ not relative value) ? 3 Os: Obstructive, Obvious, Outrageous
 
 
 
