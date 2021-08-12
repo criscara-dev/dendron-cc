@@ -68,4 +68,5 @@ trader doesn't have opinion on the market
 
 
 Collect free coins: use Bots and then leave the choose to collect the gain in BASE coin (not the Quote or Market: BTC, USDT etc. )
-5. create scanner that alert when a coin drrop > 10% within 5minutes
+5. create scanner that alert when a coin drop > 10% within 5minutes
+

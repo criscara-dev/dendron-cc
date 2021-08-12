@@ -2,7 +2,7 @@
 id: 330bdbf5-b42a-4ba2-b70a-d38f16f851b1
 title: Book
 desc: ''
-updated: 1621326405854
+updated: 1628505636561
 created: 1602420805706
 stub: false
 ---
@@ -81,3 +81,73 @@ Almost no scandal would hurt an artist or writer
 exposure triad table
 ![](/assets/images/2020-10-11-18-04-21.png)
 ![](/assets/images/2020-10-11-18-05-46.png)
+
+from book 3
+
+'nihil perditi' or 'I lost nothing' is a key phrase from Seneca's ouvre after adverse events.
+
+
+from Nassim Taleb 
+
+the retail traders risk prediction not based on complex argo but on the principle "less is more" -> become antifragile
+
+The use of the Barbell Strategy
+
+YOU CANNOT PREDICT IN GENERAL BUT YOU CAN PREDICT THAT THOSE WHO RELY ON PREDICTIONS ARE TAKING MORE RISKS, WILL HAVE SOME TROUBLE, PERHAPS EVEN GO BUST.
+why?
+SOMEONE WHO PREDICTS WILL BE FRAGILE TO PREDICTION ERRORS. AN OVERCONFIDENT PILOT WILL EVENTUALLY CRASH THE PLANE.
+and NUMERCAL PREDICTION LEAD PEOPLE TO TAKE MORE RISKS.
+
+THE PREDICTOR CAN PREDICT their own fragility
+MAKE A BET ON THE COLLAPSE OF A FRAGILE UNIT
+
+- [ ] is the loss of a certain SUM of money causing you greatr harm than benefit? 
+Basically, possible outcome:
+harm = 10
+benefit = 1
+Leave it!!!!
+This is an ASYMMETRY (unfavourable one)
+
+If I am in a condition of nothing to lose, I am ANTIFRAGILE and it's all gain
+
+Antifragile -> Barbell Strategy =
+REDUCTION of downside,
+INCREASE of upside?
+
+leave alone the middle!
+
+"Better work very intensely for very short hours then do something else rather then be subjected to low intensity interminable office hours..."
+
+
+Jensen's inequality -> 'philosopher's stone' | 'covexity bias'
+
+chp 12
+
+antifragility =  make more when right than be hurt when you're wrong = option
+
+Artists, authors, and philosophers are much better of having a very small number of fanatics behind thme than a large number of people who appreciate their work.
+The number of person that dislike my work don't count; there's not such thing as the opposite of buying my art, book and this provide me optionality.
+Ex. of Wittgenstein with very few supporters but very influencial such as B Russell and J.M. Keynes...
+
+Some options are expensive to purchase (insurance contracts etc.) but the ones we don't recognize are sometimes underpriced or not priced at all.
+
+long gamma = beneficts from volatility and variability
+
+risk is not just casino = real life risks!
+
+Maecenas
+
+---
+
+implementation don't proceed from invention. -> requires luck and circumstances
+
+Less is More
+
+No money during research if it can lead to BS is not a loss, it will be for someone who loose the job and do nothing after that.
+
+Cost of Search IS NOT a LOSS. ( it give OPTIONALITY and can lead to psositive Black Swan)
+Office forniture IS NOT an INVESTMENT
+
+confirmation fallacy -> Yddish proverb:" if the student is smart, the teacher take the credit"
+
+Lecturign birds how to fly is an ( causal illusions )Epiphenomena:

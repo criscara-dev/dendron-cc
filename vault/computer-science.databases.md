@@ -2,7 +2,7 @@
 id: 0CjJLOqJFRLlz5Up3GBId
 title: Databases
 desc: ''
-updated: 1627315701297
+updated: 1628686824964
 created: 1625429021643
 ---
 
@@ -131,7 +131,7 @@ ex. with Queries orders
 -- and totalamount > 100
 ```
 
-## NULL
+## NULL ( A boolean with True and false )
 Null will always be null
 
 Filter out _NULL_ with the _IS_ operator (null, not null, True or False)
@@ -741,7 +741,7 @@ FROM products
 
 ---
 
-## VIEWS
+## S
 
 How to store the result of a query?
 And what if I want to query the result of a query?
@@ -927,3 +927,271 @@ psql -U <user> <database>
 
 create a DB
 `CREATE DATABASE <name> ... options`
+
+Postgres offer the concept of “schemas”, a box in which you can organise tables, views, indexes, etc
+
+
+## Roles
+
+Can be a:
+    - user or
+    - a group
+
+Roles has:
+    - attributes (most common):
+        - createdb/nocreatedb
+        - createrole/nocreaterole `CREATE ROLE readonly WITH LOGIN ENCRYPTED PASSWORD ‘readonly’
+        - login -> password /nologin
+        - superuser/nosuperuser
+    - privileges
+
+==Only the DB creator or superuser has access to its objects==
+
+```zsh
+# Commands
+# See the roles available:
+\du
+# By default each DB has a ”public” schema
+\dn # to see all schemas
+```
+
+Postgres by default trust all *connections:
+
+Useful link to from base to set up roles:
+[Ref Udemy course](https://www.udemy.com/course/complete-sql-databases-bootcamp-zero-to-mastery/learn/lecture/21631772#questions)
+```zsh
+show hba_file; # which kind of auth should I use
+show config_file # which encryption SCRAM—SHA-256
+# then
+Library/Application\ Support/Postgres/var-13/ ; code .
+* pg_hba.conf # and add scram-sha-256
+* Postgresql.conf and set scram-sha-256
+# create user via questions:
+createuser --interactive
+```
+
+How to give privileges?
+
+==Principle of least privilege==
+granually start with nothing and build upon them...
+
+```zsh
+`dt # to see all tables
+GRANT SELECT ON titles TO privilegetest;
+REVOKE SELECT ON titles FROM privilegetest;
+GRANT ALL ON ALL TABLES IN SCHEMA public TO privilegetest;
+# ex.
+CREATE ROLE employee_read;
+GRANT ALL ON ALL TABLES IN SCHEMA public TO employee_read;
+```
+
+PostGres DataTypes:
+- Bolean: True, False, Null
+- Char fox text:
+    - char(n) # it has apce padding
+    - varchar(n) # space saving
+    - text ( unlimited )
+- numbers:
+    - smallint, int, bigint
+    - float4, float8 (single,double precision)
+    - decimal, numeric
+- arrays: denoted by []
+
+
+## Naming Convention
+
+what we're going to build?
+- a ERD for a Model
+Entity Relationship Diagram
+- Table name must be singular
+- column lowercase with underscores: ~~userID~~ will be `user_id`
+
+## create Table
+
+to autogenerate default UUID for IDs, add extension first in `psql` and the command is: `CREATE extension IF NOT EXISTS "uuid-ossp";` it allows to generate Universal Unique Identifier.
+
+
+## Constraints
+constraints are a tool to apply validation methods against data that will be inserted;
+
+- column constraints: NOT NULL, PRIMARY KEY, UNIQUE, CHECK, REFERENCES
+- table constraints ( use those if related to multiple columns): PRIMARY KEY, UNIQUE, CHECK, REFERENCES
+
+```sql
+CREATE TABLE student (
+    -- ...
+    CONSTRAINT pk_student_id PRIMARY_KEY (STUDENT_ID)
+);
+```
+
+<details><summary>
+Temporary Tables
+</summary>
+One thing we did not touch on during these videos is the ability to create temporary tables. They are a type of table that exist in a special schema, so you cannot define a schema name when declaring a temporary table.
+
+These types of tables will be dropped at the end of your session. It’s important to also note that they are only visible to the creator.
+
+Now you may be wondering, why would I ever use these? Well if you’re writing intensive queries against a data set it might be beneficial to temporarily create a table based off another table.
+
+This is because:
+
+Temporary tables behave just like normal ones
+
+Postgres will apply less “rules” (logging, transaction locking, etc.) to temporary tables so they execute more quickly
+
+You have full access rights to the data, if you otherwise didn’t so you can test things out.
+</details>
+
+## RegEx
+<details><summary>
+RegEx
+</summary>
+When it comes to Regular Expressions there are many avenues to take to learn and apply this skill. It in itself is a language that crosses the barriers of each programming language and can be used to validate complex text patterns. Regex comes in multiple "flavours" or what we would like to call "variations".
+
+It usually finds its place in applying validations to make sure what a user is inputting matches an expectation. That expectation could be anything:
+
+An e-mail
+
+A phone number
+
+An address
+
+A postal code
+
+When it comes to data we often have unique ways of writing these things, and they vary from country to country so it is extremely important to be able to know what inputs are expected and validate/sanitize inputs so they match your expectation.
+
+Different languages can have slight variations on how they choose to implement Regex, but they often do not differ heavily.
+
+At the end of the day, what we want to achieve is clean data and we have all of these mechanisms in place to help us, writing constraints is a hard job. For learning Regex there are thousands of resources that can teach you, help you verify and supercharge your skills. We've curated a list here of learning resources that we found extremely valuable and helpful:
+
+
+
+Regex for regular folk - A fun, illustrative and simple guide to learning regex
+
+Regex Crossword - Challenging puzzles to practice your Regex-fu
+
+Regex Search - A tool to find quick and easy regex references
+
+Regex Tester - A Regex testing tool that supports multiple flavours
+</details>
+
+## Custom Data Type
+
+DOMAIN is an alias ( a bit more let's say ) for an existing type
+
+```sql
+create DOMAIN Rating SMALLINT check (value > 0 and value <= 5);
+
+CREATE TYPE Feedback AS (
+student_id UUID,
+rating Rating,
+feedback text
+);
+```
+
+to change table that already ecist:
+```sql
+ALTER TABLE <table-name>
+ADD COLUMN <name_column> <type_column>
+```
+
+```sql
+-- NAME is a reserved key, please use "name"
+```
+
+create data
+
+```sql
+INSERT INTO student (
+    first_name,
+    last_name,
+    email,
+    date_of_birth
+) VALUES (
+    'Cris',
+    'Cara',
+    'ccara@me.com',
+    '1979-08-05'::DATE
+);
+```
+
+
+## Back-up
+
+1. backup plan
+    - How do you make a plan?
+    determine what needs to be backed up
+    - what to backup
+        1. full backup | *less often
+        2. incremental ( backup since last incremental ) | *often
+        3. differential ( backup since last full backup ) | *often
+        4. transactional log ( backup of the database transactions ) | *a lot
+    - what is the appropriate way to backup?
+    - decide the frequency*
+    - have a retention policy for the backup
+
+2. disaster recovery plan
+3. test your plans
+
+What can go wrong?
+
+1. hardware failures
+2. viruses
+3. power outage
+4. hackers
+5. human error
+
+references:
+
+[PostGres backup documentation](https://www.postgresql.org/docs/12/backup.html)
+[PostGres service tool backup](https://pgbackrest.org/)
+
+In Valentina Studio sewlect DB -> Create Dump -> Dump type -> make the proper selections and ... `dump Tables`
+
+Restore:
+```zsh
+psql -d postgres
+# check connection
+\conninfo
+# load dump
+\i <path-where-the-dump-is-store-on-HD.sql>
+```
+
+## Transaction
+
+Is a unit of instructions.
+How DBMS manage transactions? Go get first?
+
+begin -> partially commited (LOCKED) -> commited -> end
+                            -> falied ->aborted -|end
+
+```sql
+BEGIN;
+
+-- TRANSACTION suck as 
+DELETE FROM employees WHERE emp_no BETWEEN 10000 AND 10005;
+DELETE 5
+-- if I now open another instance, the deleted row are still there since the transaction ha not been closed and I cannot delete what has been delete before ( LOCKED!)
+-- rolback the transaction
+rollback;
+-- close the trsnscation
+END;
+-- COMMMIT
+```
+
+To mantain the integrity of a DB, all trnascarions must obey **ACID** properties
+Atomicity = transaction exe entirely or not at all
+Consistency = each transaction should leave th DB ina  consistent state  (commit or rollback)
+Isolation = exe in isolation from other transaction
+Durability = changes in DB should persist
+
+---
+
+DBs
+
+1. Employee
+2. CCTVs
+
+- It was an inside job
+- It was done on 2020-06-23
+- need to be on location to violate the DB

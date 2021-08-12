@@ -2,7 +2,7 @@
 id: 00B_YQB7jpXS0RDLZH-D3
 title: The Great Rat Race Escape
 desc: ''
-updated: 1627371176749
+updated: 1628350310271
 created: 1625928722856
 ---
 
@@ -88,8 +88,14 @@ The right book strategy: read the book that you need to read to solve the next p
 Search Cipher Strategy: hunt for search cipher to unlock knowledge
 The Productocracy Strategy: pull not push;
 Are you a pusher (seller of perceived/ not relative value) ? 3 Os: Obstructive, Obvious, Outrageous
-
-
+Environmental hacking strategy ( it makes positive action easier and stalling inaction harder )
+learn the marketminds and learn that "not everyine loves coffee"
+Personality and purpose strategy: poeple are loyal to BRANDS and RELATIONSHIP, not CORPORATION AND BUSINESS: turn friendship into money!
+"good isn't good enough principle": aim to excellent to be good, if you aim good, you'll be mediocre
+Gold Star strategy
+Fruit Tree strategy: hunt for fruit tree not peeled fruit (something work today won't work tomorrow; stategy working yesterday are packaged into expansive programs and amrketed as effective strategies of today)
+Demostration Stategy: is a sale tactic; use it as a freemium sometimes, hook up with reciprocity
+Gamification Startegy
 
 
 ## Ideas and Execution
@@ -140,3 +146,91 @@ ex. [ecometa](https://www.ecometa.store/en/)
 
 6. high density closed-cell polyethylene foam for crash bouldering pad
 
+7. something like https://timbeter.com/pricing/
+
+8. [fighting disinformation](https://www.rand.org/research/projects/truth-decay/fighting-disinformation/search.html)
+[civic online reason course](https://cor.stanford.edu/)
+
+9. disinformation for traders: WE SHOWS YOU THER FACTS, YOU TRADE:
+
+[reference Anthony Kreil](https://www.youtube.com/watch?v=aFeTvGiYVoI)
+
+Social trade? the social trading platform is the platform they own it! or they have an IB agreement?
+influencers?
+IB contracts or brokers dupes you!
+Online forums are not built for your benefits, fake profiles or incentivized by a brokers to do soemthing buy something; it's an affiliate program
+rebates on IP agreements
+
+FCA regulations?!
+
+**MANIPULATION RISK INDEX** FOR RETAILERS
+How will the GRXTDI ( global retail x trading disinfo index ) ( or call it Pro-retailers) risk ratings be used?
+The ~~ad~~ trading industry, including ~~advertisers~~, ~~ad~~ exchanges and platforms, often manipulate the market to make you trade more or wrong to get your money.
+Now, you can use ~~these~~ our ratings to ensure you have not been manipulated.
+You will have ~~Ad exchanges will have~~ real-time information on high-risk domains before ~~placing ads on~~ strart trading with them. 
+~~Social platforms and search engines will have a neutral assessment to make high-risk domains less visible on their platforms.~~
+
+there are different risk takers, whose who have more money and whose who have less. the latter, because of their fragility, need to predict and with much more accuracy ( Taleb, loc 2461). The ones with more money are ro bust or anti fragily so they don't need much forecasting.
+So, how do you minimize harm from forecasting errors? This tool make you anti-fragile to the events of being SCAMMED.
+Basically you can now control the exposition to the MANIPULATION system.
+
+every time I got a subscription, I will donate a portion of the profit to a person that has lost money on wrong suggestion.
+
+[reference GDI](https://disinformationindex.org/about/)
+
+
+### Possible names:
+Bias opinion predictor?!
+Noise?!
+Controlled narrative script education, seek for alternative education
+How retail traders lose money
+Kelly criterion finite bets
+
+
+---
+
+
+What Are the "10 Secrets?"
+
+1. Respect Money & Be Indifferent Towards it.
+2. Rent to Own - Define Assets & Liabilities Properly.
+3. Build and Own your own Infrastructure.
+4. Go Travelling, Get Get your Dream Life.
+5. Know That Risk is Subjective not Two Dimensional.
+6. Seek Out Alternative Education.
+7. Learn to Value Your Time Properly.
+8. Ditch The Smart Phone.
+9. Mainstream Media is Useless, Don't Consume it.
+10. Choose Role Models that Suit Your Objective.
+
+What Are the "5 Principles?"
+The 5 Principles are the philosophies that underpin the "10 Secrets"
+
+1. Acceptance underpin secrets n. 1,4,6
+2. Self Determination underpin secrets n. 2,3
+    **Rent to Own**
+    - pupolation not increase -> less demand properties = less value for real estate
+    - that's why they allow immigration: so someone can rent and real estates values can grow
+    - invesst in REIT instead, basically just give the capital
+    - rent: if you rent you've an **option** not an obligation; rent to own!!! buy for cash later and continue to mantain the freedom.
+    **Build your own infrastructure**
+    - don't outsource your pension ( proven to work properly in our world ) otherwise you won't save enough, but:
+    - build businesses from the ground up a reinvest into those or other profitable and into income generating portfolio (REIT...)
+    - pay less taxes and get better income -> Singapore LOCATION, MOVE!!!
+3. Freedom underpin secrets n. 7
+    **Learn to Value Your Time Properly**
+    ...Barbell Strategy: 1 high-skills/paid secure job and 1 risk side-job/business.
+    - ditch the smartphone: 1 hour browseing worth £30 means ina  month £900 + the cost of the phone and so on...
+    - Time Management 101: 
+    99% of messages are never urgent or require immediate attention. You can schedule a few hours a week sitting at your desk replying
+    only to messages that matter. Never respond unless it benefits you or it's a family / friend emergency.
+    Train your Network to NOT waste your time! Train them that you are non contactable for random "chats"
+    answer this question: "Did it add value to my time?"
+4. Risk IQ underpin secrets n. 5
+    **Know That Risk is Subjective not Two Dimensional**
+    You need to have BUYING POWER i.e. busiesses and investments (you need money to amke money)
+    NET WORTH in snot buying power, LIQUIDITY is "buying power", 'cause is there already, not paper worth, is not relaized yet!d
+5. Hierarchy underpin secrets n. 9,10
+    **Mainstream Media is Useless, Don't Consume it**
+    **Choose Role Models that Suit Your Objective**
+CREATE A GREAT PRODUCT,  A GREAT SERVICE
